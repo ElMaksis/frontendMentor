@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip calculator</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="main-title">SPLI<br>TTER</h1>
+        <div class="calc">
+            <div class="calc-input">
+                <div class="calc-input__bill">
+                    <h3 class="calc-input__title">Bill</h3>
+                    <label class="input-label">
+                        <input class="calc-input__field calc-input__field--bill" type="text" placeholder="0">
+                        <p class="bill-input__message"></p>
+                        <img class="calc-input__icon" src="icons/dollar.svg" alt="dollar icon">
+                    </label>
+                </div>
+                <div class="calc-input__tip">
+                    <h3 class="calc-input__title">Select Tip %</h3>
+                    <div class="calc-input__box">
+                        <button class="btn calc-input__btn" data-tip="5">5%</button>
+                        <button class="btn calc-input__btn" data-tip="10">10%</button>
+                        <button class="btn calc-input__btn" data-tip="15">15%</button>
+                        <button class="btn calc-input__btn" data-tip="25">25%</button>
+                        <button class="btn calc-input__btn" data-tip="50">50%</button>
+                        <label class="custom-btn">
+                            <button class="btn calc-input__btn calc-input__btn--custom">Custom</button>
+                            <input class="custom-btn__input" type="text">
+                        </label>
+
+                    </div>
+                </div>
+                <div class="calc-input__people">
+                    <h3 class="calc-input__title">Number of People</h3>
+                    <label class="input-label">
+                        <input class="calc-input__field calc-input__field--people" type="text" placeholder="0">
+                        <p class="bill-input__message"></p>
+                        <img class="calc-input__icon" src="icons/user.svg" alt="user icon">
+                    </label>
+                </div>
+
+            </div>
+            <div class="calc-output">
+                <div class="calc-output__box">
+                    <div>
+                        <h3 class="calc-output__title">Tip Amount</h3>
+                        <p class="calc-output__text">/ person</p>
+                    </div>
+                    <div class="calc-output__panel">
+                        <span>$</span>
+                        <span class=" calc-output__amount">0.00</span>
+                    </div>
+                </div>
+                <div class="calc-output__box">
+                    <div>
+                        <h3 class="calc-output__title">Total</h3>
+                        <p class="calc-output__text">/ person</p>
+                    </div>
+                    <div class="calc-output__panel">
+                        <span>$</span>
+                        <span class="calc-output__total">0.00</span>
+                    </div>
+                </div>
+                <button class="btn calc-output__btn">Reset</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
