@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  height: 100vh;
+  background-color: #181824;
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 540px;
+  width: 100%;
+}
+
+.header {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0 40px;
+}
+.header__link {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__switcher {
+  height: 28px;
+}
+
+.app {
+  background-color: transparent;
+  color: #76788d;
+}
+.app__new-todo {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 24px;
+  background-color: #25273c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-box {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-box__select-icon {
+  display: none;
+}
+.app-box__label:hover > .app-box__checkbox {
+  border: 2px solid #e2e4f3;
+}
+.app-box__input {
+  display: none;
+}
+.app-box__input:checked + .app-box__checkbox > .app-box__select-icon {
+  display: block;
+}
+.app-box__input:checked + .app-box__checkbox {
+  background-image: url(./images/select-bg.jpg);
+}
+.app-box__input:checked .app-item__text {
+  text-decoration: line-through;
+}
+.app-box__checkbox {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #76788d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app__todo-desc {
+  border: none;
+  outline: transparent;
+  background-color: #25273c;
+  color: #e2e4f3;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  width: 70%;
+  height: 100%;
+}
+.app-list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app-item {
+  background-color: #25273c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  font-size: 20px;
+  border-bottom: 1px solid #76788d;
+  position: relative;
+}
+.app-item--done > .app-item__text {
+  text-decoration: line-through;
+}
+.app-item__btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .3s;
+}
+.app-item__btn > svg > path {
+  transition: all .3s;
+}
+.app-item__btn:hover svg > path {
+  fill: #e2e4f3;
+}
+.app-footer {
+  background-color: #25273c;
+  padding: 0 22px;
+  border-radius: 0 0 5px 5px;
+}
+.app-footer button {
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  color: #76788d;
+  cursor: pointer;
+  transition: all .3s;
+}
+.app-footer button:hover {
+  color: #e2e4f3;
+}
+.app-footer__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+}
+.app-footer__list {
+  display: flex;
+  gap: 15px;
+}
+.app-footer__list-item--active .app-footer__btn {
+  color: #5281d9;
+}
+.app__caption {
+  margin-top: 50px;
+  flex: 18px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

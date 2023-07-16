@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO List</title>
+</head>
+
+<body style="background-image: url(images/bg-desktop-dark.jpg);">
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__link" href="#">
+                TODO
+            </a>
+            <button class="header__btn">
+                <img class="header__switcher" src="images/icon-sun.svg" alt="switch theme button">
+            </button>
+        </header>
+        <div class="app">
+            <div class="app__new-todo">
+                <div class="app-box">
+                    <label class="app-box__label">
+                        <input class="app-box__input" type="checkbox">
+                        <span class="app-box__checkbox">
+                            <img class="app-box__select-icon" src="./images/icon-check.svg" alt="checkbox select icon">
+                        </span>
+                    </label>
+                </div>
+                <input class="app__todo-desc" type="text" placeholder="Create a new todo...">
+            </div>
+            <div class="app-list">
+                <div class="app-item app-item--done">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        Complite online JavaScript course
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-item">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        Jog around the park 3x
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-item">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        10 minute meditation
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-footer">
+                    <div class="app-footer__control">
+                        <button class="app-footer__btn">5 items left</button>
+                        <ul class="app-footer__list">
+                            <li class="app-footer__list-item app-footer__list-item--active">
+                                <button class="app-footer__btn">All</button>
+                            </li>
+                            <li class="app-footer__list-item">
+                                <button class="app-footer__btn">Active</button>
+                            </li>
+                            <li class="app-footer__list-item">
+                                <button class="app-footer__btn">Completed</button>
+                            </li>
+                        </ul>
+                        <button class="app-footer__btn">Clear Completed</button>
+                    </div>
+                </div>
+
+                <p class="app__caption">Drag and drop to reorder list</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
