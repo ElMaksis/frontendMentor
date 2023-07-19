@@ -1,0 +1,39 @@
+body {
+  background-color: #181824;
+  background-image: url(images/bg-desktop-dark.jpg);
+}
+
+.app {
+  color: #76788d;
+}
+.app__new-todo {
+  background-color: #25273c;
+}
+.app-box__label:hover > .app-box__checkbox {
+  border: 2px solid #e2e4f3;
+}
+.app-box__checkbox {
+  border: 2px solid #76788d;
+}
+.app__todo-desc {
+  background-color: #25273c;
+  color: #e2e4f3;
+}
+.app-item {
+  background-color: #25273c;
+  border-bottom: 1px solid #76788d;
+}
+.app-item__btn:hover svg > path {
+  fill: #e2e4f3;
+}
+
+.app-footer {
+  background-color: #25273c;
+}
+.app-footer button:hover {
+  color: #e2e4f3;
+}
+.app-footer__container {
+  background-color: #25273c;
+  color: #76788d;
+}

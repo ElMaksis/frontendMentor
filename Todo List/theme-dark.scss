@@ -1,0 +1,53 @@
+@import 'vars';
+
+body {
+    background-color: $dark-body;
+    background-image: url(images/bg-desktop-dark.jpg);
+}
+
+.app {
+    color: $dark-main;
+
+    &__new-todo {
+        background-color: $dark-bg;
+    }
+
+    &-box__label:hover {
+        &>.app-box__checkbox {
+            border: 2px solid $dark-active;
+        }
+    }
+
+    &-box__checkbox {
+        border: 2px solid $dark-main;
+    }
+
+    &__todo-desc {
+        background-color: $dark-bg;
+        color: $dark-active;
+    }
+
+    &-item {
+        background-color: $dark-bg;
+        border-bottom: 1px solid $dark-main;
+
+        &__btn:hover {
+            svg>path {
+                fill: $dark-active;
+            }
+        }
+    }
+}
+
+.app-footer {
+    background-color: $dark-bg;
+
+    & button:hover {
+        color: $dark-active;
+    }
+
+    &__container {
+        background-color: $dark-bg;
+        color: $dark-main;
+    }
+}

@@ -1,0 +1,60 @@
+@import 'vars';
+
+body {
+    background-color: $light-body;
+    background-image: url(images/bg-desktop-light.jpg);
+}
+
+.app {
+    color: $light-main;
+
+    &__new-todo {
+        background-color: $light-bg;
+    }
+
+    &-box__label:hover {
+        &>.app-box__checkbox {
+            border: 2px solid $light-active;
+        }
+    }
+
+    &-box__checkbox {
+        border: 2px solid $light-main;
+    }
+
+    &__todo-desc {
+        background-color: $light-bg;
+        color: $light-active;
+    }
+
+    &-item {
+        background-color: $light-bg;
+        border-bottom: 1px solid $light-main;
+
+        &__btn {
+            svg>path {
+                fill: $light-main;
+            }
+        }
+
+        &__btn:hover {
+            svg>path {
+                fill: $light-active;
+            }
+        }
+    }
+}
+
+.app-footer {
+    background-color: $light-bg;
+
+    & button:hover {
+        color: $light-active;
+    }
+
+
+    &__container {
+        background-color: $light-bg;
+        color: $light-main;
+    }
+}

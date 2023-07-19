@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-dark.css" id="theme-style">
     <title>TODO List</title>
 </head>
 
-<body style="background-image: url(images/bg-desktop-dark.jpg);">
+<body>
     <div class="wrapper">
         <header class="header">
             <a class="header__link" href="#">
@@ -25,16 +26,15 @@
             <div class="app__new-todo">
                 <div class="app-box">
                     <label class="app-box__label">
-                        <input class="app-box__input" type="checkbox">
-                        <span class="app-box__checkbox">
-                            <img class="app-box__select-icon" src="./images/icon-check.svg" alt="checkbox select icon">
-                        </span>
+                        <span class="app-box__checkbox"></span>
                     </label>
                 </div>
-                <input class="app__todo-desc" type="text" placeholder="Create a new todo...">
+                <form class="app-box__form" action="#">
+                    <input class="app__todo-desc" type="text" placeholder="Create a new todo...">
+                </form>
             </div>
             <div class="app-list">
-                <div class="app-item app-item--done">
+                <div class="app-item app-item--active">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -54,7 +54,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="app-item">
+                <div class="app-item app-item--active">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -74,7 +74,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="app-item">
+                <div class="app-item app-item--active">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -94,34 +94,30 @@
                         </svg>
                     </button>
                 </div>
-                <div class="app-footer">
-                    <div class="app-footer__control">
-                        <button class="app-footer__btn">5 items left</button>
+            </div>
+            <div class="app-footer">
+                <div class="app-footer__control">
+                    <button class="app-footer__btn" data-filter="last">5 items left</button>
+                    <div class="app-footer__container">
                         <ul class="app-footer__list">
-                            <li class="app-footer__list-item app-footer__list-item--active">
-                                <button class="app-footer__btn">All</button>
+                            <li class="app-footer__list-item">
+                                <button class="app-footer__btn app-footer__btn--active" data-filter="all">All</button>
                             </li>
                             <li class="app-footer__list-item">
-                                <button class="app-footer__btn">Active</button>
+                                <button class="app-footer__btn" data-filter="active">Active</button>
                             </li>
                             <li class="app-footer__list-item">
-                                <button class="app-footer__btn">Completed</button>
+                                <button class="app-footer__btn" data-filter="complete">Completed</button>
                             </li>
                         </ul>
-                        <button class="app-footer__btn">Clear Completed</button>
                     </div>
+                    <button class="app-footer__btn" data-filter="clear">Clear
+                        Completed</button>
                 </div>
-
-                <p class="app__caption">Drag and drop to reorder list</p>
             </div>
         </div>
+        <p class="app__caption">Drag and drop to reorder list</p>
     </div>
-
-
-
-
-
-
 
     <script src="script.js"></script>
 </body>
