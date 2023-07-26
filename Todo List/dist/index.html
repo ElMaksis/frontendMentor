@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="theme-dark.css" id="theme-style">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="theme-dark.min.css" id="theme-style">
     <title>TODO List</title>
 </head>
 
@@ -26,15 +26,15 @@
             <div class="app__new-todo">
                 <div class="app-box">
                     <label class="app-box__label">
-                        <span class="app-box__checkbox"></span>
+                        <span class="app-box__checkbox new-task__btn">
+                            <img class="new-task__icon" src="images/icon-add.svg" alt="add icon">
+                        </span>
                     </label>
                 </div>
-                <form class="app-box__form" action="#">
-                    <input class="app__todo-desc" type="text" placeholder="Create a new todo...">
-                </form>
+                <input class="app__todo-desc" type="text" placeholder="Create a new todo...">
             </div>
             <div class="app-list">
-                <div class="app-item app-item--active">
+                <div class="app-item app-item--active" draggable="true">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -45,7 +45,7 @@
                         </label>
                     </div>
                     <p class="app-item__text">
-                        Complite online JavaScript course
+                        Complete online JavaScript course
                     </p>
                     <button class="app-item__btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
@@ -54,7 +54,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="app-item app-item--active">
+                <div class="app-item app-item--active" draggable="true">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -74,7 +74,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="app-item app-item--active">
+                <div class="app-item app-item--active" draggable="true">
                     <div class="app-box">
                         <label class="app-box__label">
                             <input class="app-box__input" type="checkbox">
@@ -85,7 +85,67 @@
                         </label>
                     </div>
                     <p class="app-item__text">
-                        10 minute meditation
+                        10 minutes meditation
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-item app-item--active" draggable="true">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        Read for 1 hour
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-item app-item--active" draggable="true">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        Pick up groceries
+                    </p>
+                    <button class="app-item__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd"
+                                d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="app-item app-item--active" draggable="true">
+                    <div class="app-box">
+                        <label class="app-box__label">
+                            <input class="app-box__input" type="checkbox">
+                            <span class="app-box__checkbox">
+                                <img class="app-box__select-icon" src="./images/icon-check.svg"
+                                    alt="checkbox select icon">
+                            </span>
+                        </label>
+                    </div>
+                    <p class="app-item__text">
+                        Complete Todo App on Frontend Mentor
                     </p>
                     <button class="app-item__btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
@@ -119,7 +179,7 @@
         <p class="app__caption">Drag and drop to reorder list</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
 </body>
 
 </html>

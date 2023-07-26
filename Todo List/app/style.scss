@@ -129,6 +129,22 @@ body {
         font-size: 20px;
         position: relative;
         padding-right: 70px;
+        cursor: pointer;
+
+        &.dragging {
+
+            &>.app-box {
+                opacity: 0;
+            }
+
+            .app-item__text {
+                opacity: 0;
+            }
+
+            .app-item__btn {
+                opacity: 0;
+            }
+        }
 
         &--done {
             & .app-item__text {
@@ -156,6 +172,18 @@ body {
 
         &__text {
             padding: 10px 0;
+        }
+    }
+
+    .new-task__icon {
+        display: none;
+    }
+
+    .new-task__btn:hover {
+        background-image: url(./images/select-bg.jpg);
+
+        .new-task__icon {
+            display: block;
         }
     }
 

@@ -1,0 +1,12 @@
+body{background-color:#fafafa;background-image:url(images/bg-desktop-light.jpg)}
+.app{color:#8f8e96}
+.app__new-todo{background-color:#fff}
+.app-box__label:hover>.app-box__checkbox{border:2px solid #45435b}
+.app-box__checkbox{border:2px solid #8f8e96}
+.app__todo-desc{background-color:#fff;color:#45435b}
+.app-item{background-color:#fff;border-bottom:1px solid #8f8e96}
+.app-item__btn svg>path{fill:#8f8e96}
+.app-item__btn:hover svg>path{fill:#45435b}
+.app-footer{background-color:#fff}
+.app-footer button:hover{color:#45435b}
+.app-footer__container{background-color:#fff;color:#8f8e96}

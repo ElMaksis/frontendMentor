@@ -1,8 +1,10 @@
 let themeBtn = document.querySelector('.header__btn'),
     themeIcon = document.querySelector('.header__switcher'),
     themeLink = document.querySelector('#theme-style'),
+    addBtn = document.querySelector('.new-task__btn'),
     todoInput = document.querySelector('.app__todo-desc'),
     todoList = document.querySelector('.app-list'),
+    todoTasks = document.querySelectorAll('.app-item'),
     filterBtns = document.querySelectorAll('.app-footer__btn');
 
 toggleTheme();
@@ -10,11 +12,27 @@ toggleTheme();
 themeBtn.addEventListener('click', toggleStorageSetting);
 
 todoInput.addEventListener('change', addTodoItem);
+addBtn.addEventListener('click', () => {
+    if (todoInput.value) addTodoItem;
+});
 
 todoList.addEventListener('click', function (e) {
     const clickTarget = e.target;
     todoItemClickHandler(clickTarget);
 });
+
+todoTasks.forEach(item => {
+    item.addEventListener('dragstart', () => {
+        setTimeout(() => item.classList.add('dragging'), 0);
+    });
+    item.addEventListener('dragend', () => {
+        item.classList.remove('dragging');
+    });
+});
+
+todoList.addEventListener('dragover', initReorderList);
+
+todoList.addEventListener('dragenter', (e) => { e.preventDefault() });
 
 document.querySelector('.app-footer__control').addEventListener('click', function (e) {
     if (e.target.classList.contains('app-footer__btn')) {
@@ -161,3 +179,15 @@ function todoItemClickHandler(clickTarget) {
         }
     }
 }
+
+function initReorderList(e) {
+    e.preventDefault();
+    const draggingItem = todoList.querySelector('.dragging'),
+        siblings = [...todoList.querySelectorAll('.app-item:not(.dragging)')];
+
+    let nextSibling = siblings.find(sibling => {
+        return e.clientY <= sibling.offsetTop + sibling.offsetHeight / 2;
+    });
+
+    todoList.insertBefore(draggingItem, nextSibling);
+} 
