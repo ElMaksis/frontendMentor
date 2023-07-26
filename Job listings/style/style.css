@@ -1,0 +1,291 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  background-color: #f0fafb;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  min-height: 150px;
+  background-color: #5da5a4;
+  background-image: url(../images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.container {
+  max-width: 1142px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.filter-box {
+  display: none;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 16px #55a3a3;
+  border-radius: 7px;
+  color: #55a3a3;
+  padding: 15px 40px;
+  margin-top: -35px;
+}
+.filter-box__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.filter-box__list-item {
+  display: flex;
+}
+.filter-box__item-value {
+  line-height: 30px;
+  padding: 0 8px;
+  background-color: #eef7f6;
+  border-radius: 5px 0 0 5px;
+}
+.filter-box__delete-item {
+  background-color: #55a3a3;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: transparent;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: all .3s;
+}
+.filter-box__delete-item:hover {
+  background-color: #273a38;
+}
+.filter-box__clear-btn {
+  color: #55a3a3;
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.filter-box__clear-btn:hover {
+  text-decoration: underline;
+}
+
+.job-list {
+  margin-top: 70px;
+}
+
+.job-item {
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 16px #55a3a3;
+  transition: all .3s;
+}
+.job-item:hover {
+  border-left: 4px solid #619f9e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 10px #55a3a3;
+}
+.job-item__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.job-item__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.job-item__box span {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 8px 3px;
+  border-radius: 15px;
+}
+.job-item__company {
+  font-size: 20px;
+  font-weight: 500;
+  color: #55a3a3;
+}
+.job-item__label-new {
+  background-color: #55a3a3;
+}
+.job-item__label-featured {
+  background-color: #2d3937;
+}
+.job-item__proffession {
+  font-size: 26px;
+  color: #2d3937;
+  margin: 12px 15px 12px 0;
+  cursor: pointer;
+  transition: all .3s;
+}
+.job-item__proffession:hover {
+  color: #55a3a3;
+}
+.job-item__parameters {
+  display: flex;
+  gap: 40px;
+}
+.job-item__parameters span {
+  color: #76807f;
+  position: relative;
+}
+.job-item__parameters span + span:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #76807f;
+  position: absolute;
+  top: 6px;
+  left: -19px;
+}
+.job-item__skill-list {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.job-item__skill-item {
+  padding: 6px 7px 5px;
+  background-color: #ecf8f6;
+  color: #55a3a3;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: 5px;
+}
+.job-item__skill-item:hover {
+  background-color: #55a3a3;
+  color: #fff;
+}
+
+@media (max-width: 990px) {
+  .job-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+  .job-item__content {
+    width: 100%;
+  }
+  .job-item__content + .job-item__skill-list {
+    padding-top: 16px;
+  }
+  .job-item__desc {
+    width: 100%;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #76807f;
+  }
+  .job-item__proffession {
+    margin: 15px 15px 15px 0;
+  }
+}
+@media (max-width: 590px) {
+  .header {
+    background-image: url(../images/bg-header-mobile.svg);
+  }
+
+  .filter-box {
+    padding: 15px 20px;
+  }
+
+  .job-item {
+    padding: 30px 20px;
+  }
+  .job-item__content {
+    flex-direction: column;
+    align-items: start;
+  }
+  .job-item__firm-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -53px;
+  }
+  .job-item__skill-list {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 390px) {
+  .job-item__box {
+    flex-wrap: wrap;
+  }
+  .job-item__company {
+    width: 100%;
+  }
+  .job-item__parameters {
+    gap: 20px;
+  }
+  .job-item__parameters span + span:before {
+    display: none;
+  }
+}

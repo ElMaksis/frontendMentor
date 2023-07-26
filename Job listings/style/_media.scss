@@ -1,0 +1,78 @@
+@media (max-width: 990px) {
+    .job-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 40px;
+
+        &__content {
+            width: 100%;
+
+            &+.job-item__skill-list {
+                padding-top: 16px;
+            }
+        }
+
+        &__desc {
+            width: 100%;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #76807f;
+        }
+
+        &__proffession {
+            margin: 15px 15px 15px 0;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+
+    .header {
+        background-image: url(../images/bg-header-mobile.svg);
+    }
+
+    .filter-box {
+        padding: 15px 20px;
+    }
+
+    .job-item {
+        padding: 30px 20px;
+
+        &__content {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &__firm-logo {
+            height: 50px;
+            width: 50px;
+            margin-top: -53px;
+        }
+
+        &__skill-list {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .job-item {
+
+        &__box {
+            flex-wrap: wrap;
+        }
+
+        &__company {
+            width: 100%;
+        }
+
+        &__parameters {
+            gap: 20px;
+
+            & span+span:before {
+                display: none;
+            }
+        }
+    }
+}
