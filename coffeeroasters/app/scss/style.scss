@@ -1,0 +1,253 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+@import 'header';
+@import 'footer';
+
+
+// ========================  PRESENTATION  ==================
+
+
+.presentation {
+    &__inner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        border-radius: 10px;
+    }
+
+    &__content {
+        min-height: 600px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 86px;
+        color: $white;
+    }
+
+    &__title {
+        font-family: Fraunces;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 56px;
+        max-width: 442px;
+    }
+}
+
+
+// ===================  COLLECTION  ======================
+
+
+.collection {
+    &__inner {
+        padding: 136px 0 200px;
+        display: flex;
+        background-image: url(../images/content/collection-bg.png);
+        background-repeat: no-repeat;
+        background-size: 1215px;
+        background-position: top center;
+    }
+
+    &-item {
+        flex: 0 1 25%;
+        color: $accent;
+        padding: 0 20px;
+        text-align: center;
+
+        &__img {
+            max-width: 225px;
+            height: 190px;
+            object-fit: contain;
+            margin: 0 auto 70px auto;
+        }
+
+        &__title {
+            font-family: Fraunces;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 32px;
+            margin-bottom: 24px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+
+}
+
+
+// =========================  BENEFITS  ========================
+
+
+.benefits {
+    margin-bottom: 350px;
+
+    &__inner {
+        background-color: #2C343E;
+        color: $white;
+        text-align: center;
+        padding-top: 112px;
+        border-radius: 10px;
+    }
+
+    &__title {
+        font-family: Fraunces;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin: 32px auto 86px auto;
+        max-width: 540px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &-item {
+        flex: 0 1 350px;
+        min-height: 380px;
+        padding: 48px;
+        background-color: #0E8784;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center 72px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: -154px;
+
+        &:nth-child(1) {
+            background-image: url(../images/icons/coffee-bean.svg);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../images/icons/gift.svg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../images/icons/delivery.svg);
+        }
+
+        &__title {
+            font-family: Fraunces 9;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 32px;
+            margin-bottom: 24px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+}
+
+
+// ====================   PLAN  ======================
+
+
+.plan {
+    padding-left: 85px;
+    padding-bottom: 200px;
+
+
+    &__title {
+        color: $main;
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        margin-bottom: 80px;
+    }
+
+    &__decoration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 765px;
+        margin-bottom: 68px;
+    }
+
+    &__step-one {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $bg;
+        border-radius: 50%;
+    }
+
+    &__step-path {
+        height: 2px;
+        width: 100%;
+        background-color: $orange;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__step-box {
+        display: flex;
+        justify-content: flex-start;
+        gap: 95px;
+        margin-bottom: 64px;
+    }
+
+    &__step-item {
+        flex: 0 1 285px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__step-number {
+        color: $orange;
+        font-family: Fraunces;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+    }
+
+    &__step-title {
+        color: $accent;
+        font-family: Fraunces;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        margin: 38px 0 43px 0;
+    }
+
+    &__plan-text {
+        color: $accent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+
+
+@import 'media';

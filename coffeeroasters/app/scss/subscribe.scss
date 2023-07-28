@@ -1,0 +1,356 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+@import 'header';
+@import 'footer';
+
+
+// ======================  INTRO  ==================
+
+
+.intro {
+    &__inner {
+        min-height: 450px;
+        background-image: url(../images/content/plan-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        padding-left: 85px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    &__content {
+        max-width: 485px;
+        color: $white;
+    }
+
+    &__title {
+        font-family: Fraunces;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+
+// ======================  PLAN  ==================
+
+
+.plan {
+    padding-left: 85px;
+    padding-bottom: 200px;
+
+    &--dark {
+        margin-top: 175px;
+        padding-left: 0;
+        padding-bottom: 175px;
+    }
+
+    &__inner--dark {
+        background-color: #2C343E;
+        border-radius: 10px;
+        padding: 100px 85px;
+    }
+
+    &__decoration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 765px;
+        margin-bottom: 68px;
+    }
+
+    &__step-one {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $bg;
+        border-radius: 50%;
+    }
+
+    &__step-path {
+        height: 2px;
+        width: 100%;
+        background-color: $orange;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__step-box {
+        display: flex;
+        justify-content: flex-start;
+        gap: 95px;
+        margin-bottom: 64px;
+    }
+
+    &__step-item {
+        flex: 0 1 285px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__step-number {
+        color: $orange;
+        font-family: Fraunces;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+    }
+
+    &__step-title {
+        color: $accent;
+        font-family: Fraunces;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        margin: 38px 0 43px 0;
+
+        &--dark {
+            color: $white;
+        }
+    }
+
+    &__step-text {
+        color: $accent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+
+        &--dark {
+            color: $white;
+        }
+    }
+}
+
+
+.subscribe {
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 95px;
+    }
+
+    &__item {
+        padding: 24px 0;
+
+        &+.subscribe__item {
+            border-top: 1px solid $main;
+        }
+
+        &--active {
+            .subscribe__item-num {
+                color: $bg;
+            }
+
+            .subscribe__item-name {
+                color: #000;
+            }
+        }
+    }
+
+    &__link {
+        color: #333D4B;
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+
+        &>span {
+            margin-right: 24px;
+        }
+
+        &:hover {
+            .subscribe__item-name {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.subscribe__item-name {
+    opacity: .7;
+    transition: all .3s;
+}
+
+.aside {
+    flex: 0 1 250px;
+}
+
+.main {
+    flex: 0 1 730px;
+    margin-bottom: 160px;
+}
+
+.accordion {
+    padding-bottom: 84px;
+}
+
+.accordion-item {
+    &+.accordion-item {
+        margin-top: 88px;
+    }
+
+    &__tab {
+        font-family: Fraunces;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        position: relative;
+
+        &::after {
+            content: url(../images/icons/arrow.svg);
+            margin-left: 50px;
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+    }
+
+    &__content {
+        padding-top: 56px;
+        display: flex;
+        gap: 23px;
+    }
+
+    &__element {
+        border-radius: 8px;
+        background-color: #F4F1EB;
+        padding: 32px 28px;
+        color: $accent;
+        flex: 0 1 230px;
+    }
+
+    &__title {
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+
+// ==================  SUMMARY  ===================
+
+
+.summary {
+    padding: 26px 64px;
+    background-color: #2C343E;
+    color: #fff;
+
+    &__title {
+        opacity: .5;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+    }
+}
+
+.order {
+    font-family: Fraunces;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+
+    span {
+        color: $bg;
+    }
+}
+
+
+// ================  MODAL  ==================
+
+
+.modal {
+    display: none;
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__window {
+        z-index: 10;
+        min-height: 550px;
+        max-width: 540px;
+        border-radius: 8px;
+        background-color: $white;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Fraunces;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        padding: 42px 0;
+    }
+
+    &__header {
+        padding: 0 56px;
+        background-color: #333D4B;
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__content {
+        padding: 56px;
+    }
+
+    &__correct {
+        margin: 17px 0 62px;
+        color: $accent;
+    }
+
+    &__order-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__price {
+        color: $accent;
+        font-family: Fraunces;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+    }
+
+    &__btn {
+        padding: 15px 64px;
+        max-width: 217px;
+    }
+}
+
+
+@import 'media';

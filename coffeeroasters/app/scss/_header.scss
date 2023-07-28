@@ -1,0 +1,35 @@
+.header {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 43px 0;
+    }
+}
+
+.logo__icon {
+    height: 26px;
+}
+
+.nav-menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.923px;
+        text-transform: uppercase;
+        transition: all .3s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &+.nav-menu__item {
+            margin-left: 33px;
+        }
+    }
+}

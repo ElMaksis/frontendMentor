@@ -1,0 +1,39 @@
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
+body {
+    font-family: 'Barlow', sans-serif;
+    color: $main;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    // padding: 0 15px;
+}
+
+.button {
+    color: $white;
+    background-color: $bg;
+    font-family: Fraunces;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    padding: 15px 31px;
+    border-radius: 6px;
+    border: none;
+    outline: transparent;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #66D2CF;
+    }
+
+    &--disabled {
+        background-color: #E2DEDB;
+
+        &:hover {
+            background-color: #E2DEDB;
+        }
+    }
+}

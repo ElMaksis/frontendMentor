@@ -1,0 +1,33 @@
+.footer {
+
+    &__inner {
+        padding: 46px 0;
+        background-color: #2C343E;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-menu__item {
+        color: $main;
+        transition: all .3s;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__item {
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
