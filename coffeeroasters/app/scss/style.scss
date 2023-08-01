@@ -5,6 +5,7 @@
 @import 'footer';
 
 
+
 // ========================  PRESENTATION  ==================
 
 
@@ -52,6 +53,8 @@
     &__inner {
         padding: 136px 0 200px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         background-image: url(../images/content/collection-bg.png);
         background-repeat: no-repeat;
         background-size: 1215px;
@@ -59,7 +62,7 @@
     }
 
     &-item {
-        flex: 0 1 25%;
+        flex: 0 1 24%;
         color: $accent;
         padding: 0 20px;
         text-align: center;
@@ -151,7 +154,7 @@
         }
 
         &__title {
-            font-family: Fraunces 9;
+            font-family: Fraunces;
             font-size: 24px;
             font-weight: 900;
             line-height: 32px;

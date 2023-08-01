@@ -97,7 +97,6 @@
         flex: 0 1 285px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: flex-start;
     }
 
@@ -146,6 +145,10 @@
     &__item {
         padding: 24px 0;
 
+        & span {
+            transition: all .5s;
+        }
+
         &+.subscribe__item {
             border-top: 1px solid $main;
         }
@@ -157,6 +160,12 @@
 
             .subscribe__item-name {
                 color: #000;
+            }
+        }
+
+        &--disabled {
+            span {
+                color: rgba(131, 136, 143, .5);
             }
         }
     }
@@ -199,6 +208,17 @@
 }
 
 .accordion-item {
+    cursor: pointer;
+    position: relative;
+
+    &--active .accordion-item__tab::after {
+        transform: rotate(0);
+    }
+
+    &--disabled .accordion-item__tab {
+        color: rgba(131, 136, 143, .5);
+    }
+
     &+.accordion-item {
         margin-top: 88px;
     }
@@ -208,29 +228,51 @@
         font-size: 40px;
         font-weight: 900;
         line-height: 48px;
-        position: relative;
+
+        display: flex;
+        align-items: center;
+        transition: all .5s;
 
         &::after {
             content: url(../images/icons/arrow.svg);
+            transform: rotate(180deg);
             margin-left: 50px;
             position: absolute;
             right: 0;
-            bottom: 5px;
+            transition: all .3s;
         }
     }
 
     &__content {
         padding-top: 56px;
-        display: flex;
+        display: none;
         gap: 23px;
     }
 
-    &__element {
+    &__label {
+        padding: 32px 26px;
+        cursor: pointer;
         border-radius: 8px;
         background-color: #F4F1EB;
-        padding: 32px 28px;
         color: $accent;
         flex: 0 1 230px;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        &--active {
+            background-color: $bg;
+
+            &:hover {
+                background-color: $bg;
+            }
+        }
+    }
+
+    &__input {
+        display: none;
     }
 
     &__title {
@@ -289,10 +331,9 @@
 
     &__wrapper {
         position: absolute;
-        top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
+        height: 100vh;
         background-color: rgba(0, 0, 0, .7);
         display: flex;
         align-items: center;
@@ -347,8 +388,19 @@
     }
 
     &__btn {
-        padding: 15px 64px;
-        max-width: 217px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 26px;
+        min-width: 217px;
+
+        &>.modal__price {
+            display: none;
+            color: $white;
+            font-family: Fraunces;
+            font-size: 18px;
+            font-weight: 900;
+        }
     }
 }
 

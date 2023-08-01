@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/subscribe.min.css">
     <script src="js/main.min.js" defer></script>
-    <title>Document</title>
+    <title>Subscribe</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                     <img class="logo__icon" src="images/icons/header-logo.png" alt="logo">
                 </a>
                 <nav class="nav-menu">
-                    <ul class="nav-menu__list">
+                    <ul class="nav-menu__list header__nav-list">
                         <li class="nav-menu__item">
                             <a class="nav-menu__link" href="#">HOME</a>
                         </li>
@@ -44,7 +44,7 @@
                     <h3 class="intro__title">
                         Create a plan
                     </h3>
-                    <p class="intero__text">
+                    <p class="intro__text">
                         Build a subscription plan that best fits your needs. We offer an
                         assortment of the best artisan coffees from around the globe
                         delivered fresh to your door.
@@ -111,31 +111,31 @@
             <div class="subscribe__inner">
                 <aside class="aside">
                     <ul class="subscribe__list">
-                        <li class="subscribe__item subscribe__item--active">
+                        <li class="subscribe__item subscribe__item--active" data-num="0">
                             <a class="subscribe__link" href="#">
                                 <span class="subscribe__item-num">01</span>
                                 <span class="subscribe__item-name">Preferences</span>
                             </a>
                         </li>
-                        <li class="subscribe__item">
+                        <li class="subscribe__item" data-num="1">
                             <a class="subscribe__link" href="#">
                                 <span class="subscribe__item-num">02</span>
                                 <span class="subscribe__item-name">Bean Type</span>
                             </a>
                         </li>
-                        <li class="subscribe__item">
+                        <li class="subscribe__item" data-num="2">
                             <a class="subscribe__link" href="#">
                                 <span class="subscribe__item-num">03</span>
                                 <span class="subscribe__item-name">Quantity</span>
                             </a>
                         </li>
-                        <li class="subscribe__item">
+                        <li class="subscribe__item" data-num="3">
                             <a class="subscribe__link" href="#">
                                 <span class="subscribe__item-num">04</span>
                                 <span class="subscribe__item-name">Grind Option</span>
                             </a>
                         </li>
-                        <li class="subscribe__item">
+                        <li class="subscribe__item" data-num="4">
                             <a class="subscribe__link" href="#">
                                 <span class="subscribe__item-num">05</span>
                                 <span class="subscribe__item-name">Deliveries</span>
@@ -145,141 +145,153 @@
                 </aside>
                 <main class="main">
                     <div class="accordion">
-                        <div class="accordion-item">
+                        <div class="accordion-item accordion-item--active" data-num="0">
                             <div class="accordion-item__tab">
                                 How do you drink your coffee?
                             </div>
-                            <div class="accordion-item__content">
-                                <div class="accordion-item__element">
+                            <div class="accordion-item__content" style="display: flex">
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="preference">
                                     <h5 class="accordion-item__title">Capsule</h5>
                                     <p class="accordion-item__desc">
                                         Compatible with Nespresso systems and similar brewers
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="preference">
                                     <h5 class="accordion-item__title">Filter</h5>
                                     <p class="accordion-item__desc">
                                         For pour over or drip methods like Aeropress, Chemex, and V60
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="preference">
                                     <h5 class="accordion-item__title">Espresso</h5>
                                     <p class="accordion-item__desc">
                                         Dense and finely ground beans for an intense, flavorful experience
                                     </p>
-                                </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" data-num="1">
                             <div class="accordion-item__tab">
                                 What type of coffee?
                             </div>
                             <div class="accordion-item__content">
-                                <div class="accordion-item__element">
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="type">
                                     <h5 class="accordion-item__title">Single Origin</h5>
                                     <p class="accordion-item__desc">
                                         Distinct, high quality coffee from a specific family-owned farm
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="type">
                                     <h5 class="accordion-item__title">Decaf</h5>
                                     <p class="accordion-item__desc">
                                         Just like regular coffee, except the caffeine has been removed
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="type">
                                     <h5 class="accordion-item__title">Blended</h5>
                                     <p class="accordion-item__desc">
                                         Combination of two or three dark roasted beans of organic coffees
                                     </p>
-                                </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" data-num="2">
                             <div class="accordion-item__tab">
                                 How much would you like?
                             </div>
                             <div class="accordion-item__content">
-                                <div class="accordion-item__element">
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="quantity">
                                     <h5 class="accordion-item__title">250g</h5>
                                     <p class="accordion-item__desc">
                                         Perfect for the solo drinker. Yields about 12 delicious cups.
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="quantity">
                                     <h5 class="accordion-item__title">500g</h5>
                                     <p class="accordion-item__desc">
                                         Perfect option for a couple. Yields about 40 delectable cups.
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="quantity">
                                     <h5 class="accordion-item__title">1000g</h5>
                                     <p class="accordion-item__desc">
                                         Perfect for offices and events. Yields about 90 delightful cups.
                                     </p>
-                                </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" data-num="3">
                             <div class="accordion-item__tab">
                                 Want us to grind them?
                             </div>
                             <div class="accordion-item__content">
-                                <div class="accordion-item__element">
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="grind">
                                     <h5 class="accordion-item__title">Wholebean</h5>
                                     <p class="accordion-item__desc">
                                         Best choice if you cherish the full sensory experience
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="grind">
                                     <h5 class="accordion-item__title">Filter</h5>
                                     <p class="accordion-item__desc">
                                         For drip or pour-over coffee methods such as V60 or Aeropress
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="grind">
                                     <h5 class="accordion-item__title">Cafetiére</h5>
                                     <p class="accordion-item__desc">
                                         Course ground beans specially suited for french press coffee
                                     </p>
-                                </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" data-num="4">
                             <div class="accordion-item__tab">
                                 How often should we deliver?
                             </div>
                             <div class="accordion-item__content">
-                                <div class="accordion-item__element">
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="delivery">
                                     <h5 class="accordion-item__title">Every week</h5>
                                     <p class="accordion-item__desc">
-                                        $7.20 per shipment. Includes free first-class shipping.
+                                        <span class="delivery__one-week">$7.20</span> per shipment. Includes free
+                                        first-class shipping.
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="delivery">
                                     <h5 class="accordion-item__title">Every 2 weeks</h5>
                                     <p class="accordion-item__desc">
-                                        $9.60 per shipment. Includes free priority shipping.
+                                        <span class="delivery__two-week">$9.60</span> per shipment. Includes free
+                                        priority shipping.
                                     </p>
-                                </div>
-                                <div class="accordion-item__element">
+                                </label>
+                                <label class="accordion-item__label">
+                                    <input class="accordion-item__input" type="radio" name="delivery">
                                     <h5 class="accordion-item__title">Every month</h5>
                                     <p class="accordion-item__desc">
-                                        $12.00 per shipment. Includes free priority shipping.
+                                        <span class="delivery__four-week">$12.00</span> per shipment. Includes free
+                                        priority shipping.
                                     </p>
-                                </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <div class="summary">
                         <span class="summary__title">Order Summary</span>
-                        <div class="order">
-                            “I drink my coffee using <span class="order__pref">_____</span>,
-                            with a <span class="order__type">_____</span>type of bean.
-                            <span class="order__quantity">_____</span> ground ala,
-                            <span class="order__grind">_____</span> sent to me
-                            <span class="order__delivery">_____</span>.”
-                        </div>
+                        <div class="order"></div>
                     </div>
                     <button class="button summary__btn button--disabled">Create your plan</button>
                 </main>
@@ -294,13 +306,7 @@
                     <h3 class="modal__title">Order Summary</h3>
                 </div>
                 <div class="modal__content">
-                    <p class="modal__order order">
-                        “I drink my coffee using <span class="order__pref">_____</span>,
-                        with a <span class="order__type">_____</span>type of bean.
-                        <span class="order__quantity">_____</span> ground ala,
-                        <span class="order__grind">_____</span> sent to me
-                        <span class="order__delivery">_____</span>.”
-                    </p>
+                    <p class="modal__order order"></p>
                     <p class="modal__correct">
                         Is this correct? You can proceed to checkout or go back to
                         plan selection if something is off. Subscription discount
@@ -308,7 +314,10 @@
                     </p>
                     <div class="modal__order-box">
                         <span class="modal__price">$14.00/ mo</span>
-                        <button class="button modal__btn">Checkout</button>
+                        <button class="button modal__btn">
+                            <span>Checkout </span>
+                            <span class="modal__price"> - $14.00/ mo</span>
+                        </button>
                     </div>
                 </div>
             </div>
