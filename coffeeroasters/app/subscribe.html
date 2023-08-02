@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/subscribe.min.css">
     <script src="js/main.min.js" defer></script>
+    <script src="js/burger.js" defer></script>
     <title>Subscribe</title>
 </head>
 
@@ -21,18 +22,25 @@
                     <img class="logo__icon" src="images/icons/header-logo.png" alt="logo">
                 </a>
                 <nav class="nav-menu">
-                    <ul class="nav-menu__list header__nav-list">
+                    <ul class="nav-menu__list header__nav-list mobile__nav-list">
                         <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#">HOME</a>
+                            <a class="nav-menu__link" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#">ABOUT US</a>
+                            <a class="nav-menu__link" href="./about.html">ABOUT US</a>
                         </li>
                         <li class="nav-menu__item">
                             <a class="nav-menu__link" href="#">Create your plan</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="burger-menu">
+                    <a class="burger-menu__link " href="#">
+                        <span class="burger-menu__icon"></span>
+                        <span class="burger-menu__icon"></span>
+                        <span class="burger-menu__icon"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -293,7 +301,7 @@
                         <span class="summary__title">Order Summary</span>
                         <div class="order"></div>
                     </div>
-                    <button class="button summary__btn button--disabled">Create your plan</button>
+                    <a class="button summary__btn button--disabled">Create your plan</a>
                 </main>
             </div>
         </div>
@@ -331,12 +339,12 @@
                     <img class="logo__icon" src="images/icons/footer-logo.png" alt="logo">
                 </a>
                 <nav class="nav-menu">
-                    <ul class="nav-menu__list">
+                    <ul class="nav-menu__list footer__nav-list">
                         <li class="nav-menu__item footer-menu__item">
-                            <a class="nav-menu__link" href="#">HOME</a>
+                            <a class="nav-menu__link" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-menu__item footer-menu__item">
-                            <a class="nav-menu__link" href="#">ABOUT US</a>
+                            <a class="nav-menu__link" href="./about.html">ABOUT US</a>
                         </li>
                         <li class="nav-menu__item footer-menu__item">
                             <a class="nav-menu__link" href="#">Create your plan</a>

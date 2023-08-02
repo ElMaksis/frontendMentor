@@ -1,5 +1,5 @@
-// font-family: 'Barlow', sans-serif;
-// font-family: 'Fraunces', serif;
+@import 'vars';
+
 body {
     font-family: 'Barlow', sans-serif;
     color: $main;
@@ -11,7 +11,8 @@ body {
     padding: 0 15px;
 }
 
-.button {
+a.button {
+    display: inline-block;
     color: $white;
     background-color: $bg;
     font-family: Fraunces;
