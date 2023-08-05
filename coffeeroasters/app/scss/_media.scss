@@ -85,6 +85,10 @@
     .intro__inner {
         padding-left: 40px;
         min-height: 400px;
+        background-image: url(../images/content/transparent-bg.png), url(../images/content/plan-bg.jpg);
+        background-repeat: repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: center center, center center;
     }
 
     .intro__content {
@@ -183,6 +187,10 @@
 
     .about__inner {
         padding-left: 56px;
+        background-image: url(../images/content/transparent-bg.png), url(../images/content/about-bg.jpg);
+        background-repeat: repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: center center, center center;
     }
 
     .about__title {
@@ -479,7 +487,7 @@
     }
 
     .modal__order-box .modal__btn>.modal__price {
-        display: flex;
+        display: inline-block;
     }
 }
 
@@ -492,7 +500,7 @@
     }
 
     .benefits {
-        margin-bottom: 1080px;
+        margin-bottom: 735px;
     }
 
     .benefits-item {

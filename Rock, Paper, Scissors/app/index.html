@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__logo">
+                <img class="header__logo-icon" src="images/game__logo.svg" alt="image logo">
+            </a>
+            <div class="scoreboard">
+                <p class="scoreboard__title">SCORE</p>
+                <p class="scoreboard__counter">12</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="choice">
+                <div class="option option__paper"></div>
+                <span class="option__line"></span>
+                <div class="option option__scissors"></div>
+                <span class="option__line"></span>
+                <div class="option option__rock"></div>
+                <span class="option__line"></span>
+            </div>
+            <div class="game">
+                <div class="game__person">
+                    <h4 class="game__title">YOU PICKED</h4>
+                    <div class="game__board selected-option" style="background-image: url('images/scissors.svg');">
+                    </div>
+                </div>
+                <div class="game__result">
+                    <h2 class="game__result-title">YOU WIN</h2>
+                    <button class="game__btn">PLAY AGAIN</button>
+
+                </div>
+                <div class="game__computer">
+                    <h4 class="game__title">THE HOUSE PICKED</h4>
+                    <div class="game__board selected-option" style="background-image: url('images/default-bg.svg');">
+                    </div>
+                </div>
+
+            </div>
+            <button class="rules__btn">RULES</button>
+        </main>
+    </div>
+
+
+</body>
+
+</html>

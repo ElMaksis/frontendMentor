@@ -388,11 +388,7 @@
     }
 
     &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 15px 26px;
-        min-width: 217px;
 
         &>.modal__price {
             display: none;
