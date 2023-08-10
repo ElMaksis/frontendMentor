@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header__inner">
+                <nav class="navigation">
+                    <a class="navigation__logo" href="#">
+                        sneakers
+                    </a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Collections</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Men</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Women</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-panel">
+                    <a class="cart__link" href="#">
+                        <svg class="cart__img" width="22" height="21" viewBox="0 0 22 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_204_112)">
+                                <path
+                                    d="M20.925 4.141H3.86298L3.60998 1.316C3.58999 1.09301 3.48724 0.885582 3.32196 0.734558C3.15669 0.583533 2.94086 0.499856 2.71698 0.5H0.896977C0.659343 0.5 0.431441 0.5944 0.263409 0.762433C0.0953763 0.930465 0.000976563 1.15837 0.000976562 1.396C0.000976563 1.63363 0.0953763 1.86154 0.263409 2.02957C0.431441 2.1976 0.659343 2.292 0.896977 2.292H1.89698L2.92798 13.775C3.00098 14.603 3.44798 15.501 4.21898 16.111C2.82998 17.885 4.09898 20.5 6.35898 20.5C8.23398 20.5 9.55598 18.63 8.91298 16.858H13.818C13.176 18.628 14.495 20.5 16.373 20.5C17.0933 20.4992 17.7839 20.2127 18.2933 19.7033C18.8027 19.194 19.0892 18.5034 19.09 17.783C19.0892 17.0627 18.8027 16.372 18.2933 15.8627C17.7839 15.3533 17.0933 15.0668 16.373 15.066H6.36498C5.68398 15.066 5.09098 14.656 4.83498 14.057L19.156 13.215C19.3465 13.2039 19.5285 13.1322 19.6755 13.0104C19.8224 12.8887 19.9267 12.7231 19.973 12.538L21.794 5.255C21.8269 5.12281 21.8293 4.98485 21.801 4.85159C21.7727 4.71833 21.7144 4.59326 21.6306 4.48589C21.5467 4.37852 21.4395 4.29166 21.3171 4.2319C21.1946 4.17214 21.0602 4.14105 20.924 4.141H20.925ZM6.35798 18.708C6.12009 18.6969 5.89561 18.5946 5.73118 18.4224C5.56675 18.2501 5.475 18.0211 5.475 17.783C5.475 17.5449 5.56675 17.3159 5.73118 17.1436C5.89561 16.9714 6.12009 16.8691 6.35798 16.858C6.59586 16.8691 6.82034 16.9714 6.98477 17.1436C7.14921 17.3159 7.24095 17.5449 7.24095 17.783C7.24095 18.0211 7.14921 18.2501 6.98477 18.4224C6.82034 18.5946 6.59586 18.6969 6.35798 18.708ZM16.373 18.708C16.1351 18.6969 15.9106 18.5946 15.7462 18.4224C15.5817 18.2501 15.49 18.0211 15.49 17.783C15.49 17.5449 15.5817 17.3159 15.7462 17.1436C15.9106 16.9714 16.1351 16.8691 16.373 16.858C16.6109 16.8691 16.8353 16.9714 16.9998 17.1436C17.1642 17.3159 17.256 17.5449 17.256 17.783C17.256 18.0211 17.1642 18.2501 16.9998 18.4224C16.8353 18.5946 16.6109 18.6969 16.373 18.708ZM18.394 11.465L4.59398 12.275L4.02398 5.934H19.777L18.394 11.464V11.465Z"
+                                    fill="#68707D" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_204_112">
+                                    <rect width="22" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="cart__modal">
+                            <p class="cart__title">Cart</p>
+                            <div class="cart__product-item">
+                                <img class="cart__product-img" src="image/content/image-product-1-thumbnail.jpg"
+                                    alt="product preview ">
+                                <div class="cart__product">
+                                    <p class="cart__product-name">Fall Limited Edition Sneakers</p>
+                                    <span class="cart__product-price">$125.00</span>
+                                    <span class="cart__product-amount">x 3</span>
+                                    <span class="cart__product-total">$375.00</span>
+                                </div>
+                                <div class="cart__delete-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_208_198)">
+                                            <path
+                                                d="M0 2.62501V1.75001C0 1.33401 0.334 1.00001 0.75 1.00001H4.25L4.544 0.416006C4.60512 0.290778 4.7003 0.185319 4.81864 0.111737C4.93697 0.0381538 5.07366 -0.000571319 5.213 6.3701e-06H8.784C8.92363 -8.2303e-05 9.06052 0.0388111 9.17924 0.112307C9.29797 0.185804 9.39382 0.290984 9.456 0.416006L9.75 1.00001H13.25C13.666 1.00001 14 1.33401 14 1.75001V2.62501C13.9997 2.72438 13.9601 2.81961 13.8899 2.88988C13.8196 2.96015 13.7244 2.99974 13.625 3.00001H0.375C0.275625 2.99974 0.180396 2.96015 0.110127 2.88988C0.0398575 2.81961 0.000263946 2.72438 0 2.62501H0ZM13 4.37501V14.5C13 14.8978 12.842 15.2794 12.5607 15.5607C12.2794 15.842 11.8978 16 11.5 16H2.5C2.10218 16 1.72064 15.842 1.43934 15.5607C1.15804 15.2794 1 14.8978 1 14.5V4.37501C1 4.16901 1.169 4.00001 1.375 4.00001H12.625C12.831 4.00001 13 4.16901 13 4.37501ZM4.5 6.50001C4.5 6.22501 4.275 6.00001 4 6.00001C3.725 6.00001 3.5 6.22501 3.5 6.50001V13.5C3.5 13.775 3.725 14 4 14C4.275 14 4.5 13.775 4.5 13.5V6.50001ZM7.5 6.50001C7.5 6.22501 7.275 6.00001 7 6.00001C6.725 6.00001 6.5 6.22501 6.5 6.50001V13.5C6.5 13.775 6.725 14 7 14C7.275 14 7.5 13.775 7.5 13.5V6.50001ZM10.5 6.50001C10.5 6.22501 10.275 6.00001 10 6.00001C9.725 6.00001 9.5 6.22501 9.5 6.50001V13.5C9.5 13.775 9.725 14 10 14C10.275 14 10.5 13.775 10.5 13.5V6.50001Z"
+                                                fill="#C3CAD9" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_208_198">
+                                                <rect width="14" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="product__btn btn--cart cart__buy-btn" type="submit">
+                                <span class="product__btn-icon">
+                                    <img class="product__btn-cart" src="image/icons/icon-cart2.svg"
+                                        alt="icon product cart ">
+                                </span>
+                                <span class="product__btn-text">Add to cart</span>
+                            </button>
+                        </div>
+                    </a>
+                    <a class="avatar__link" href="#">
+                        <img class="avatar__img" src="image/content/image-avatar.png" alt="avatar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="product">
+        <div class="product-container">
+            <div class="product__inner">
+                <div class="product__gallery">
+                    <img class="product__big-img" src="image/content/image-product-1.jpg" alt="photo of product">
+                    <div class="product__img-box">
+                        <img class="product__box-item" src="image/content/image-product-1-thumbnail.jpg"
+                            alt="photo of product">
+                        <img class="product__box-item" src="image/content/image-product-2-thumbnail.jpg"
+                            alt="photo of product">
+                        <img class="product__box-item" src="image/content/image-product-3-thumbnail.jpg"
+                            alt="photo of product">
+                        <img class="product__box-item" src="image/content/image-product-4-thumbnail.jpg"
+                            alt="photo of product">
+                    </div>
+                </div>
+                <div class="product__content">
+                    <h4 class="product__sub-title">
+                        Sneaker Company
+                    </h4>
+                    <h1 class="product__title">
+                        Fall Limited Edition Sneakers
+                    </h1>
+                    <p class="product__desc">
+                        These low-profile sneakers are your perfect casual wear
+                        companion. Featuring a durable rubber outer sole, they’ll
+                        withstand everything the weather can offer.
+                    </p>
+                    <span class="product__price">$125.00</span>
+                    <span class="product__sale">50%</span>
+                    <p class="product__old-price">$250.00</p>
+                    <form class="product__form">
+                        <button class="product__btn btn--minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5"
+                                fill="none">
+                                <g clip-path="url(#clip0_208_13)">
+                                    <path
+                                        d="M11.357 3.832C11.4414 3.83227 11.5251 3.81585 11.6031 3.78369C11.6812 3.75153 11.7522 3.70427 11.8119 3.64461C11.8717 3.58496 11.919 3.51409 11.9513 3.43607C11.9836 3.35806 12.0001 3.27443 12 3.19V1.143C12.0003 1.05849 11.9838 0.974757 11.9516 0.896626C11.9194 0.818494 11.872 0.747505 11.8123 0.687745C11.7525 0.627984 11.6815 0.580631 11.6034 0.548411C11.5252 0.51619 11.4415 0.499739 11.357 0.500003H0.643003C0.558489 0.499739 0.474757 0.51619 0.396626 0.548411C0.318494 0.580631 0.247505 0.627984 0.187745 0.687745C0.127984 0.747505 0.0806309 0.818494 0.0484107 0.896626C0.0161904 0.974757 -0.000260978 1.05849 3.13019e-06 1.143V3.189C3.13019e-06 3.546 0.287003 3.832 0.643003 3.832H11.357Z"
+                                        fill="#FF7D1A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_208_13">
+                                        <rect width="12" height="4" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <input class="product__input" type="number" disabled value="3">
+                        <button class="product__btn btn--plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                fill="none">
+                                <g clip-path="url(#clip0_208_16)">
+                                    <path
+                                        d="M12 7.52301V5.47701C12.0003 5.3925 11.9838 5.30877 11.9516 5.23063C11.9194 5.1525 11.872 5.08151 11.8123 5.02175C11.7525 4.96199 11.6815 4.91464 11.6034 4.88242C11.5253 4.8502 11.4415 4.83375 11.357 4.83401H7.66701V1.14301C7.66728 1.05833 7.65076 0.974433 7.61842 0.89617C7.58607 0.817907 7.53854 0.746829 7.47857 0.687041C7.41859 0.627254 7.34737 0.579943 7.269 0.547841C7.19064 0.51574 7.10669 0.499484 7.02201 0.500013H4.97701C4.8925 0.499748 4.80877 0.5162 4.73063 0.54842C4.6525 0.58064 4.58151 0.627993 4.52175 0.687754C4.46199 0.747515 4.41464 0.818503 4.38242 0.896635C4.3502 0.974766 4.33375 1.0585 4.33401 1.14301V4.83301H0.643013C0.558329 4.83275 0.474433 4.84926 0.39617 4.88161C0.317907 4.91395 0.246829 4.96148 0.187041 5.02146C0.127254 5.08143 0.079943 5.15266 0.0478413 5.23102C0.0157396 5.30938 -0.000516362 5.39333 1.25014e-05 5.47801V7.52401C1.25014e-05 7.88001 0.287013 8.16701 0.643013 8.16701H4.33301V11.858C4.33301 12.214 4.62101 12.501 4.97701 12.501H7.02301C7.10753 12.5013 7.19126 12.4848 7.26939 12.4526C7.34752 12.4204 7.41851 12.373 7.47827 12.3133C7.53803 12.2535 7.58538 12.1825 7.6176 12.1044C7.64983 12.0263 7.66628 11.9425 7.66601 11.858V8.16801H11.357C11.4418 8.16828 11.5258 8.15173 11.6041 8.11932C11.6824 8.08692 11.7535 8.03929 11.8133 7.97921C11.8731 7.91914 11.9204 7.84779 11.9525 7.76931C11.9845 7.69083 12.0007 7.60678 12 7.52201V7.52301Z"
+                                        fill="#FF7D1A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_208_16">
+                                        <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="product__btn btn--cart product__cart" type="submit">
+                            <span class="product__btn-icon">
+                                <img class="product__btn-cart" src="image/icons/icon-cart2.svg"
+                                    alt="icon product cart ">
+                            </span>
+                            <span class="product__btn-text">Add to cart</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal">
+        <div class="slider">
+            <a class="slider__close-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.2225 0L21.5571 3.33457L14.3316 10.5553L21.5555 17.7791L18.2209 21.1137L11.0002 13.8883L3.7795 21.1121L0.444931 17.7776L7.66565 10.5569L0.443359 3.33457L3.77793 0L10.9986 7.22229L18.2225 0Z"
+                        fill="#FF7D1A" />
+                </svg>
+            </a>
+            <div class="slider__gallery">
+                <img class="slider__big-img" src="image/content/image-product-1.jpg" alt="photo of product">
+                <button class="slider__btn btn--prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+                        <g clip-path="url(#clip0_208_296)">
+                            <path d="M11 17.7711L3 9.77106L11 1.77106" stroke="#1D2025" stroke-width="3" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_208_296">
+                                <rect width="13" height="18" fill="white" transform="matrix(-1 0 0 -1 13 18.7711)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button class="slider__btn btn--next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+                        <g clip-path="url(#clip0_208_292)">
+                            <path d="M2 1.77112L10 9.77112L2 17.7711" stroke="#1D2025" stroke-width="3" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_208_292">
+                                <rect width="13" height="18" fill="white" transform="translate(0 0.771118)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <div class="slider__img-box">
+                    <img class="slider__box-item" src="image/content/image-product-1-thumbnail.jpg"
+                        alt="photo of product">
+                    <img class="slider__box-item" src="image/content/image-product-2-thumbnail.jpg"
+                        alt="photo of product">
+                    <img class="slider__box-item" src="image/content/image-product-3-thumbnail.jpg"
+                        alt="photo of product">
+                    <img class="slider__box-item" src="image/content/image-product-4-thumbnail.jpg"
+                        alt="photo of product">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
