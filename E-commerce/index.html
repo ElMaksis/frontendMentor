@@ -19,10 +19,16 @@
         <div class="header-container">
             <div class="header__inner">
                 <nav class="navigation">
+                    <a class="navigation__burger-link" href="#"> <!-- navigation__burger-link--active -->
+                        <span class="navigation__burger-item"></span>
+                        <span class="navigation__burger-item"></span>
+                        <span class="navigation__burger-item"></span>
+                        <span class="navigation__burger-item"></span>
+                    </a>
                     <a class="navigation__logo" href="#">
                         sneakers
                     </a>
-                    <ul class="navigation__list">
+                    <ul class="navigation__list"> <!-- mobile-list -->
                         <li class="navigation__item">
                             <a class="navigation__link" href="#">Collections</a>
                         </li>
@@ -56,18 +62,19 @@
                             </defs>
                         </svg>
                         <span class="cart__count-label"></span>
-                        <div class="cart__modal">
-                            <p class="cart__title">Cart</p>
-                            <div class="cart__product-box"></div>
-                            <button class="product__btn btn--cart cart__buy-btn" type="submit">
-                                <span class="product__btn-icon">
-                                    <img class="product__btn-cart" src="image/icons/icon-cart2.svg"
-                                        alt="icon product cart ">
-                                </span>
-                                <span class="product__btn-text">Add to cart</span>
-                            </button>
-                        </div>
                     </a>
+                    <div class="cart__modal">
+                        <p class="cart__title">Cart</p>
+                        <div class="cart__product-box"></div>
+                        <p class="cart__empty">Your cart is empty.</p>
+                        <button class="product__btn btn--cart cart__buy-btn hide" type="submit">
+                            <span class="product__btn-icon">
+                                <img class="product__btn-cart" src="image/icons/icon-cart2.svg"
+                                    alt="icon product cart ">
+                            </span>
+                            <span class="product__btn-text">Add to cart</span>
+                        </button>
+                    </div>
                     <a class="avatar__link" href="#">
                         <img class="avatar__img" src="image/content/image-avatar.png" alt="avatar">
                     </a>
@@ -80,6 +87,31 @@
             <div class="product__inner">
                 <div class="product__gallery">
                     <img class="product__big-img" src="image/content/image-product-1.jpg" alt="photo of product">
+                    <button class="slider__btn product__prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+                            <g clip-path="url(#clip0_208_296)">
+                                <path d="M11 17.7711L3 9.77106L11 1.77106" stroke="#1D2025" stroke-width="3" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_296">
+                                    <rect width="13" height="18" fill="white"
+                                        transform="matrix(-1 0 0 -1 13 18.7711)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button class="slider__btn product__next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+                            <g clip-path="url(#clip0_208_292)">
+                                <path d="M2 1.77112L10 9.77112L2 17.7711" stroke="#1D2025" stroke-width="3" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_292">
+                                    <rect width="13" height="18" fill="white" transform="translate(0 0.771118)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
                     <div class="product__img-box">
                         <div class="product__item-wrapper selected" data-item="1">
                             <img class="product__box-item" src="image/content/image-product-1-thumbnail.jpg"
@@ -111,9 +143,11 @@
                         companion. Featuring a durable rubber outer sole, they’ll
                         withstand everything the weather can offer.
                     </p>
-                    <span class="product__price">$125.00</span>
-                    <span class="product__sale">50%</span>
-                    <p class="product__old-price">$250.00</p>
+                    <div class="product__block-price">
+                        <span class="product__price">$125.00</span>
+                        <span class="product__sale">50%</span>
+                        <p class="product__old-price">$250.00</p>
+                    </div>
                     <form class="product__form">
                         <button class="product__btn btn--minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5"
