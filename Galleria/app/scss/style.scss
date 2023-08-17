@@ -1,0 +1,367 @@
+@import 'reset';
+@import 'global';
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 40px 40px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E5E5E5;
+
+    &__logo-icon {
+        height: 48px;
+    }
+
+    &__slider-link {
+        color: #7D7D7D;
+        font-family: Libre Baskerville;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2.571px;
+        transition: all .3s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.galleria {
+    margin-top: 40px;
+    column-count: 4;
+    column-gap: 40px;
+    height: 1420px;
+
+    &__slide-item {
+        flex: 0 1 310px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100% 170px, cover;
+        background-position: bottom center, top center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        color: #FFF;
+        padding: 32px;
+        margin-bottom: 40px;
+        transition: all, .3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .5);
+            background-blend-mode: soft-light;
+        }
+    }
+
+    &__item-name {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__item-artist {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    &__slide-1 {
+        height: 250px;
+        background-image: url('../images/linear.png'), url('../images/starry-night/thumbnail.jpg');
+    }
+
+    &__slide-2 {
+        height: 340px;
+        background-image: url('../images/linear.png'), url('../images/the-storm-on-the-sea-of-galilee/thumbnail.jpg');
+    }
+
+    &__slide-3 {
+        height: 420px;
+        background-image: url('../images/linear.png'), url('../images/lady-with-an-ermine/thumbnail.jpg');
+    }
+
+    &__slide-4 {
+        height: 260px;
+        background-image: url('../images/linear.png'), url('../images/the-boy-in-the-red-vest/thumbnail.jpg');
+    }
+
+    &__slide-5 {
+        height: 400px;
+        background-image: url('../images/linear.png'), url('../images/girl-with-pearl-earring/thumbnail.jpg');
+
+    }
+
+    &__slide-6 {
+        height: 280px;
+        background-image: url('../images/linear.png'), url('../images/the-great-wave-off-kanagawa/thumbnail.jpg');
+    }
+
+    &__slide-7 {
+        height: 260px;
+        background-image: url('../images/linear.png'), url('../images/the-night-cafe/thumbnail.jpg');
+    }
+
+    &__slide-8 {
+        height: 330px;
+        background-image: url('../images/linear.png'), url('../images/arnolfini-portrait/thumbnail.jpg');
+    }
+
+    &__slide-9 {
+        height: 285px;
+        background-image: url('../images/linear.png'), url('../images/guernica/thumbnail.jpg');
+    }
+
+    &__slide-10 {
+        height: 500px;
+        background-image: url('../images/linear.png'), url('../images/van-gogh-self-portrait/thumbnail.jpg');
+    }
+
+    &__slide-11 {
+        height: 525px;
+        background-image: url('../images/linear.png'), url('../images/mona-lisa/thumbnail.jpg');
+    }
+
+    &__slide-12 {
+        height: 250px;
+        background-image: url('../images/linear.png'), url('../images/penitent-magdalene/thumbnail.jpg');
+    }
+
+    &__slide-13 {
+        height: 250px;
+        background-image: url('../images/linear.png'), url('../images/the-sleeping-gypsy/thumbnail.jpg');
+    }
+
+    &__slide-14 {
+        height: 430px;
+        background-image: url('../images/linear.png'), url('../images/the-Basket-of-apples/thumbnail.jpg');
+    }
+
+    &__slide-15 {
+        height: 340px;
+        background-image: url('../images/linear.png'), url('../images/the-swing/thumbnail.jpg');
+    }
+}
+
+.slider {
+    padding-top: 100px;
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+
+    &__item {
+        max-width: 1360px;
+        width: 100%;
+        min-height: 700px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__picture {
+        position: relative;
+    }
+
+    &__preview-img {
+        max-width: 475px;
+        height: 560px;
+        object-fit: cover;
+    }
+
+    &__fullsize-btn {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        cursor: pointer;
+        padding: 14px 16px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        transition: all .3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .3);
+        }
+    }
+
+    &__fullsize-icon {
+        height: 12px;
+    }
+
+    &__btn-title {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.143px;
+    }
+
+    &__pic-description {
+        color: #7D7D7D;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        max-width: 475px;
+        text-align: left;
+        padding-right: 125px;
+    }
+
+    &__pic-year {
+        color: #F3F3F3;
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 150px;
+        position: absolute;
+        z-index: -1;
+        top: -10px;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 80px;
+        color: #7D7D7D;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1.929px;
+        text-decoration-line: underline;
+        transition: all .3s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__pic-plate {
+        width: 445px;
+        min-height: 238px;
+        background-color: #fff;
+        padding: 0 0 67px 65px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    &__pic-name {
+        color: #000;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        margin-bottom: 24px;
+        width: 360px;
+    }
+
+    &__pic-artist {
+        color: #7D7D7D;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__artist-img {
+        position: absolute;
+        bottom: 75px;
+        left: 43%;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__desc {
+        padding: 24px 0;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__artist {
+        font-size: 13px;
+        font-weight: 400;
+        opacity: .7;
+    }
+
+    &__btn {
+        border: none;
+        outline: transparent;
+        background-color: #fff;
+        cursor: pointer;
+
+        & svg g {
+            transition: all .3s;
+        }
+
+        &.disabled {
+            svg g {
+                opacity: .15;
+            }
+        }
+
+        &:not(.disabled):hover {
+            & svg g {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: relative;
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    &__page {
+        position: relative;
+    }
+
+    &__close-btn {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: all .3s;
+        position: absolute;
+        right: 0;
+        top: -40px;
+
+        &:hover {
+            opacity: .25;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@import 'media';
