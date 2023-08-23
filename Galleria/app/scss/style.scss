@@ -40,7 +40,7 @@ body {
     margin-top: 40px;
     column-count: 4;
     column-gap: 40px;
-    height: 1420px;
+    height: 1430px;
 
     &__slide-item {
         flex: 0 1 310px;
@@ -76,78 +76,78 @@ body {
 
     &__slide-1 {
         height: 250px;
-        background-image: url('../images/linear.png'), url('../images/starry-night/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/starry-night/thumbnail.jpg');
     }
 
     &__slide-2 {
         height: 340px;
-        background-image: url('../images/linear.png'), url('../images/the-storm-on-the-sea-of-galilee/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg');
     }
 
     &__slide-3 {
         height: 420px;
-        background-image: url('../images/linear.png'), url('../images/lady-with-an-ermine/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/lady-with-an-ermine/thumbnail.jpg');
     }
 
     &__slide-4 {
         height: 260px;
-        background-image: url('../images/linear.png'), url('../images/the-boy-in-the-red-vest/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-boy-in-the-red-vest/thumbnail.jpg');
     }
 
     &__slide-5 {
         height: 400px;
-        background-image: url('../images/linear.png'), url('../images/girl-with-pearl-earring/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/girl-with-pearl-earring/thumbnail.jpg');
 
     }
 
     &__slide-6 {
         height: 280px;
-        background-image: url('../images/linear.png'), url('../images/the-great-wave-off-kanagawa/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-great-wave-off-kanagawa/thumbnail.jpg');
     }
 
     &__slide-7 {
         height: 260px;
-        background-image: url('../images/linear.png'), url('../images/the-night-cafe/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-night-cafe/thumbnail.jpg');
     }
 
     &__slide-8 {
         height: 330px;
-        background-image: url('../images/linear.png'), url('../images/arnolfini-portrait/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/arnolfini-portrait/thumbnail.jpg');
     }
 
     &__slide-9 {
         height: 285px;
-        background-image: url('../images/linear.png'), url('../images/guernica/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/guernica/thumbnail.jpg');
     }
 
     &__slide-10 {
         height: 500px;
-        background-image: url('../images/linear.png'), url('../images/van-gogh-self-portrait/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/van-gogh-self-portrait/thumbnail.jpg');
     }
 
     &__slide-11 {
         height: 525px;
-        background-image: url('../images/linear.png'), url('../images/mona-lisa/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/mona-lisa/thumbnail.jpg');
     }
 
     &__slide-12 {
         height: 250px;
-        background-image: url('../images/linear.png'), url('../images/penitent-magdalene/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/penitent-magdalene/thumbnail.jpg');
     }
 
     &__slide-13 {
         height: 250px;
-        background-image: url('../images/linear.png'), url('../images/the-sleeping-gypsy/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-sleeping-gypsy/thumbnail.jpg');
     }
 
     &__slide-14 {
         height: 430px;
-        background-image: url('../images/linear.png'), url('../images/the-Basket-of-apples/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-Basket-of-apples/thumbnail.jpg');
     }
 
     &__slide-15 {
         height: 340px;
-        background-image: url('../images/linear.png'), url('../images/the-swing/thumbnail.jpg');
+        background-image: url('../assets/linear.png'), url('../assets/the-swing/thumbnail.jpg');
     }
 }
 
@@ -322,11 +322,10 @@ body {
 
 .modal {
     display: none;
-    position: relative;
+    position: absolute;
+    top: 0;
 
     &__wrapper {
-        position: absolute;
-        top: 0;
         height: 100vh;
         width: 100vw;
         display: flex;

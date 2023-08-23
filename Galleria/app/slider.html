@@ -9,54 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/main.min.js" defer></script>
+    <script type="module" src="js/slider.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a class="header__logo-link" href="#">
-                <img class="header__logo-icon" src="images/shared/logo.svg" alt="logo icon">
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo-icon" src="./assets/shared/logo.svg" alt="logo icon">
             </a>
-            <a class="header__slider-link" href="#">STOP SLIDESHOW</a>
+            <a class="header__slider-link slider__stop-btn" href="#">STOP SLIDESHOW</a>
         </header>
         <div class="slider">
-            <div class="slider__item">
-                <div class="slider__content">
-                    <div class="slider__picture">
-                        <img class="slider__preview-img" src="images/starry-night/hero-large.jpg" alt="starry night">
-                        <a class="slider__fullsize-btn">
-                            <img class="slider__fullsize-icon" src="images/shared/icon-view-image.svg"
-                                alt="button icon">
-                            <span class="slider__btn-title">VIEW IMAGE</span>
-                        </a>
-                    </div>
-                    <div class="slider__pic-plate">
-                        <h3 class="slider__pic-name">Starry
-                            Night</h3>
-                        <p class="slider__pic-artist">Vincent Van Gogh</p>
-                    </div>
-                    <img class="slider__artist-img" src="images/starry-night/artist.jpg" alt="Vincent Van Gogh">
-                    <p class="slider__pic-description">
-                        <span class="slider__pic-year">1889</span>
-                        Although The Starry Night was painted during the day in Van Gogh's ground-floor studio, it would
-                        be inaccurate to state that the picture was painted from memory. The view has been identified as
-                        the one from his bedroom window, facing east, a view which Van Gogh painted variations of no
-                        fewer than twenty-one times, including The Starry Night. "Through the iron-barred window," he
-                        wrote to his brother, Theo, around 23 May 1889, "I can see an enclosed square of wheat ... above
-                        which, in the morning, I watch the sun rise in all its glory."
-                        <a class="slider__link" href="#" target="_blank">GO TO SOURCE</a>
-                    </p>
-                </div>
-            </div>
         </div>
         <footer class="footer">
             <div class="footer__desc">
-                <p class="footer__title">Starry Night</p>
-                <p class="footer__artist">Vincent Van Gogh</p>
+                <p class="footer__title"></p>
+                <p class="footer__artist"></p>
             </div>
             <div class="footer__control">
-                <button class="footer__btn prev__btn disabled">
+                <button class="footer__btn prev__btn">
                     <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
                         <g stroke="#000" fill="none" fill-rule="evenodd">
                             <path d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z" stroke-width="2" />
@@ -80,7 +52,7 @@
         <div class="modal__wrapper">
             <div class="modal__page">
                 <a class="modal__close-btn">CLOSE</a>
-                <img class="modal__big-image" src="images/starry-night/gallery.jpg" alt="starry-night">
+                <img class="modal__big-image" src="#" alt="#">
             </div>
         </div>
     </div>
