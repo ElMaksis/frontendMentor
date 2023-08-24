@@ -24,18 +24,20 @@ document.body.addEventListener('click', (e) => {
 
 function renderSlider() {
     const item = localStorage.getItem('selectItem') ? localStorage.getItem('selectItem') : slideIndex;
-
+    const screenWidth = window.screen.width;
+    console.log(screenWidth);
     const sliderItem = document.createElement('div');
     sliderItem.innerHTML = `
         <div class="slider__content">
         <div class="slider__picture">
-            <img class="slider__preview-img" src="${data[item].images.hero.large}" alt="${data[item].name}">
-            <a class="slider__fullsize-btn" href="#">
-                <img class="slider__fullsize-icon" src="./assets/shared/icon-view-image.svg"
-                    alt="button icon">
-                <span class="slider__btn-title">VIEW IMAGE</span>
-            </a>
-        </div>
+            <img class="slider__preview-img" src="${screenWidth >= 500 ? data[item].images.hero.large : data[item].images.hero.small
+        } " alt="${data[item].name} ">
+    <a class="slider__fullsize-btn" href = "#">
+        <img class="slider__fullsize-icon" src="./assets/shared/icon-view-image.svg"
+            alt="button icon">
+            <span class="slider__btn-title">VIEW IMAGE</span>
+        </a>
+        </div >
         <div class="slider__pic-plate">
             <h3 class="slider__pic-name">${data[item].name}</h3>
             <p class="slider__pic-artist">${data[item].artist.name}</p>

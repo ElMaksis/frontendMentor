@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 40px 40px 0;
 }
@@ -40,7 +40,11 @@ body {
     margin-top: 40px;
     column-count: 4;
     column-gap: 40px;
-    height: 1430px;
+    min-height: 1430px;
+
+    &__slide-link {
+        display: flex;
+    }
 
     &__slide-item {
         flex: 0 1 310px;
