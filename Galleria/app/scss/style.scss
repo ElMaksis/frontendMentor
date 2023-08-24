@@ -277,6 +277,12 @@ body {
         bottom: 75px;
         left: 43%;
     }
+
+    &__progress-bar {
+        height: 1px;
+        background-color: #000;
+        max-width: 100%;
+    }
 }
 
 .footer {

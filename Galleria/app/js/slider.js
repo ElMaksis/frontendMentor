@@ -3,10 +3,13 @@ import data from '../data.json' assert {type: 'json'};
 let slideIndex = 0,
     timer;
 
+const screenWidth = document.documentElement.clientWidth;
+
 const sliderStopBtn = document.querySelector('.slider__stop-btn'),
     slider = document.querySelector('.slider'),
     sliderPrevBtn = document.querySelector('.prev__btn'),
     sliderNextBtn = document.querySelector('.next__btn'),
+    sliderProgressBar = document.querySelector('.slider__progress-bar'),
     footerPictureName = document.querySelector('.footer__title'),
     footerPictureArtsit = document.querySelector('.footer__artist'),
     fullSizeModal = document.querySelector('.modal'),
@@ -24,8 +27,8 @@ document.body.addEventListener('click', (e) => {
 
 function renderSlider() {
     const item = localStorage.getItem('selectItem') ? localStorage.getItem('selectItem') : slideIndex;
-    const screenWidth = window.screen.width;
-    console.log(screenWidth);
+    let bottomLine = 0;
+
     const sliderItem = document.createElement('div');
     sliderItem.innerHTML = `
         <div class="slider__content">
@@ -60,7 +63,12 @@ function renderSlider() {
 
     if (item == data.length - 1) sliderNextBtn.classList.add('disabled');
     else sliderNextBtn.classList.remove('disabled');
+
+    bottomLine = Math.floor((screenWidth / data.length) * (+item + 1));
+    sliderProgressBar.style.width = `${bottomLine}px`;
 }
+
+
 
 function timerChange() {
     timer = setInterval(() => {
