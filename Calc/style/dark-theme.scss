@@ -1,0 +1,60 @@
+body {
+    background-color: #3A4663;
+}
+
+.calc {
+    &__header {
+        color: #fff;
+    }
+
+    &__theme-box {
+        background-color: #242D44;
+    }
+
+    &__theme-spot {
+        background-color: #D03F2F;
+
+        &:hover {
+            background-color: #F96B5B;
+        }
+    }
+
+    &__screenboard {
+        background-color: #181F33;
+        color: #fff;
+    }
+
+    &__keyboard {
+        background-color: #242D44;
+    }
+
+    &__btn {
+        background-color: #EAE3DC;
+        box-shadow: 0px -4px 0px 0px #B3A497 inset;
+        color: #434A59;
+
+        &:hover {
+            background-color: #FFFFFE;
+        }
+    }
+}
+
+.btn--del {
+    background-color: #647198;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+    color: #fff;
+
+    &:hover {
+        background-color: #A2B2E1;
+    }
+}
+
+.btn--equal {
+    background-color: #D03F2F;
+    box-shadow: 0px -4px 0px 0px #93261A inset;
+    color: #fff;
+
+    &:hover {
+        background-color: #F96B5B;
+    }
+}

@@ -1,0 +1,161 @@
+@import 'reset';
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+    width: 540px;
+    height: 706px;
+    background-color: transparent;
+    padding: 0 15px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.533px;
+    }
+
+    &__theme-switch {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    &__theme-title {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__theme-box {
+        width: 70px;
+        height: 26px;
+        border-radius: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    &__theme-label {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            font-size: 12px;
+            position: absolute;
+            top: -18px;
+            left: 5px;
+        }
+
+        &:nth-child(1)::before {
+            content: '1';
+        }
+
+        &:nth-child(2)::before {
+            content: '2';
+        }
+
+        &:nth-child(3)::before {
+            content: '3';
+        }
+    }
+
+    &__theme-spot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: none;
+        transition: all .3s;
+    }
+
+    &__theme-item {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+        &:checked {
+            &+.calc__theme-spot {
+                display: block;
+            }
+        }
+    }
+
+    &__screenboard {
+        border-radius: 10px;
+        padding: 40px 32px;
+        font-size: 56px;
+        font-weight: 700;
+        letter-spacing: -0.933px;
+        text-align: right;
+        margin-bottom: 24px;
+        overflow: hidden;
+    }
+
+    &__keyboard {
+        min-height: 480px;
+        border-radius: 10px;
+        padding: 20px 32px;
+    }
+
+    &__row-keys {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        width: 101px;
+        height: 64px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -0.667px;
+        cursor: pointer;
+        border: none;
+        outline: transparent;
+        transition: background-color .3s;
+        margin: 12px 0;
+    }
+}
+
+.btn--del {
+    border-radius: 10px;
+    font-size: 28px;
+    letter-spacing: -0.467px;
+    text-transform: uppercase;
+}
+
+.btn--equal {
+    border-radius: 10px;
+    font-size: 28px;
+    letter-spacing: -0.467px;
+}
+
+.btn--long {
+    max-width: 227px;
+    padding: 13px 30px;
+    width: 100%;
+}
+
+@import 'media';

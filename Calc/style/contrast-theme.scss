@@ -1,0 +1,62 @@
+body {
+    background-color: #17062A;
+}
+
+.calc {
+    &__header {
+        color: #FFE53D;
+    }
+
+    &__theme-box {
+        background-color: #1E0936;
+    }
+
+    &__theme-spot {
+        background-color: #00DED0;
+
+        &:hover {
+            background-color: #93FFF8;
+        }
+    }
+
+    &__screenboard {
+        background-color: #1E0936;
+        color: #FFE53D;
+    }
+
+    &__keyboard {
+        background-color: #1E0936;
+    }
+
+    &__btn {
+        background: #331C4D;
+        box-shadow: 0px -4px 0px 0px #881C9E inset;
+        color: #FFE53D;
+
+        &:hover {
+            background: #8631AF;
+            box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+        }
+    }
+}
+
+.btn--del {
+    background: #56077C;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+    color: #fff;
+
+    &:hover {
+        background: #8631AF;
+    }
+}
+
+.btn--equal {
+    background: #00DED0;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+    color: #fff;
+
+    &:hover {
+        background-color: #93FFF8;
+        box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+    }
+}

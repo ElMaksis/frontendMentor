@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link class="theme-style" rel="stylesheet" href="style/dark-theme.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="calc">
+        <div class="calc__header">
+            <span class="calc__name">calc</span>
+            <div class="calc__theme-switch">
+                <span class="calc__theme-title">theme</span>
+                <div class="calc__theme-box">
+                    <label class="calc__theme-label">
+                        <input class="calc__theme-item" type="radio" name="calc-theme" value="dark" checked>
+                        <span class="calc__theme-spot"></span>
+                    </label>
+
+                    <label class="calc__theme-label">
+                        <input class="calc__theme-item" type="radio" name="calc-theme" value="light">
+                        <span class="calc__theme-spot"></span>
+                    </label>
+
+                    <label class="calc__theme-label">
+                        <input class="calc__theme-item" type="radio" name="calc-theme" value="contrast">
+                        <span class="calc__theme-spot"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="calc__screenboard">0
+        </div>
+        <div class="calc__keyboard">
+            <div class="calc__row-keys">
+                <button class="calc__btn">7</button>
+                <button class="calc__btn">8</button>
+                <button class="calc__btn">9</button>
+                <button class="calc__btn btn--del">DEL</button>
+            </div>
+            <div class="calc__row-keys">
+                <button class="calc__btn">4</button>
+                <button class="calc__btn">5</button>
+                <button class="calc__btn">6</button>
+                <button class="calc__btn">+</button>
+            </div>
+            <div class="calc__row-keys">
+                <button class="calc__btn">1</button>
+                <button class="calc__btn">2</button>
+                <button class="calc__btn">3</button>
+                <button class="calc__btn">-</button>
+            </div>
+            <div class="calc__row-keys">
+                <button class="calc__btn">.</button>
+                <button class="calc__btn">0</button>
+                <button class="calc__btn">/</button>
+                <button class="calc__btn">X</button>
+            </div>
+            <div class="calc__row-keys">
+                <button class="calc__btn btn--del btn--long">RESET</button>
+                <button class="calc__btn btn--equal btn--long">=</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

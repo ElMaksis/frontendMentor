@@ -1,0 +1,49 @@
+body {
+  background-color: #3A4663;
+}
+
+.calc__header {
+  color: #fff;
+}
+.calc__theme-box {
+  background-color: #242D44;
+}
+.calc__theme-spot {
+  background-color: #D03F2F;
+}
+.calc__theme-spot:hover {
+  background-color: #F96B5B;
+}
+.calc__screenboard {
+  background-color: #181F33;
+  color: #fff;
+}
+.calc__keyboard {
+  background-color: #242D44;
+}
+.calc__btn {
+  background-color: #EAE3DC;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+  color: #434A59;
+}
+.calc__btn:hover {
+  background-color: #FFFFFE;
+}
+
+.btn--del {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  color: #fff;
+}
+.btn--del:hover {
+  background-color: #A2B2E1;
+}
+
+.btn--equal {
+  background-color: #D03F2F;
+  box-shadow: 0px -4px 0px 0px #93261A inset;
+  color: #fff;
+}
+.btn--equal:hover {
+  background-color: #F96B5B;
+}/*# sourceMappingURL=dark-theme.css.map */

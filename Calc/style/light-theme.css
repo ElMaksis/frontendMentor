@@ -1,0 +1,49 @@
+body {
+  background-color: #E6E6E6;
+}
+
+.calc__header {
+  color: #36362C;
+}
+.calc__theme-box {
+  background-color: #D2CDCD;
+}
+.calc__theme-spot {
+  background-color: #C85402;
+}
+.calc__theme-spot:hover {
+  background-color: #FF8A38;
+}
+.calc__screenboard {
+  background-color: #EEE;
+  color: #36362C;
+}
+.calc__keyboard {
+  background-color: #D2CDCD;
+}
+.calc__btn {
+  background-color: #E5E4E1;
+  box-shadow: 0px -4px 0px 0px #A79E91 inset;
+  color: #36362C;
+}
+.calc__btn:hover {
+  background-color: #FFF;
+}
+
+.btn--del {
+  background-color: #378187;
+  box-shadow: 0px -4px 0px 0px #1B6066 inset;
+  color: #fff;
+}
+.btn--del:hover {
+  background: #62B5BC;
+}
+
+.btn--equal {
+  background: #C85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+  color: #fff;
+}
+.btn--equal:hover {
+  background-color: #FF8A38;
+}/*# sourceMappingURL=light-theme.css.map */

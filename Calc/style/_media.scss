@@ -1,0 +1,45 @@
+@media(max-width: 580px) {
+    .calc {
+        width: 375px;
+
+        &__screenboard {
+            padding: 22px 24px;
+            font-size: 40px;
+        }
+
+        &__keyboard {
+            min-height: 420px;
+            padding: 24px;
+        }
+
+        &__btn {
+            width: 60px;
+            height: 64px;
+            font-size: 32px;
+        }
+    }
+
+    .btn--long {
+        max-width: 133px;
+        padding: 12px 22px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 360px) {
+    .calc__keyboard {
+        padding: 20px 18px;
+    }
+
+    .calc__btn {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+    }
+
+    .btn--long {
+        max-width: 125px;
+        padding: 10px 18px;
+        width: 100%;
+    }
+}
