@@ -1,0 +1,436 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+ul[class],
+ol[class] {
+  padding: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+ul[class] {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+body {
+  min-height: 100vh; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-family: 'Libre Baskerville', serif; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 40px 0; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E5E5E5; }
+  .header__logo-icon {
+    height: 48px; }
+  .header__slider-link {
+    color: #7D7D7D;
+    font-family: Libre Baskerville;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.571px;
+    transition: all .3s; }
+    .header__slider-link:hover {
+      color: #000; }
+
+.galleria {
+  margin-top: 40px;
+  column-count: 4;
+  column-gap: 40px;
+  min-height: 1430px; }
+  .galleria__slide-link {
+    display: flex; }
+  .galleria__slide-item {
+    flex: 0 1 310px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 170px, cover;
+    background-position: bottom center, top center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #FFF;
+    padding: 32px;
+    margin-bottom: 40px;
+    transition: all, .3s; }
+    .galleria__slide-item:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      background-blend-mode: soft-light; }
+  .galleria__item-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .galleria__item-artist {
+    font-size: 13px;
+    font-weight: 400; }
+  .galleria__slide-1 {
+    height: 250px;
+    background-image: url("../assets/linear.png"), url("../assets/starry-night/thumbnail.jpg"); }
+  .galleria__slide-2 {
+    height: 340px;
+    background-image: url("../assets/linear.png"), url("../assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg"); }
+  .galleria__slide-3 {
+    height: 420px;
+    background-image: url("../assets/linear.png"), url("../assets/lady-with-an-ermine/thumbnail.jpg"); }
+  .galleria__slide-4 {
+    height: 260px;
+    background-image: url("../assets/linear.png"), url("../assets/the-boy-in-the-red-vest/thumbnail.jpg"); }
+  .galleria__slide-5 {
+    height: 400px;
+    background-image: url("../assets/linear.png"), url("../assets/girl-with-pearl-earring/thumbnail.jpg"); }
+  .galleria__slide-6 {
+    height: 280px;
+    background-image: url("../assets/linear.png"), url("../assets/the-great-wave-off-kanagawa/thumbnail.jpg"); }
+  .galleria__slide-7 {
+    height: 260px;
+    background-image: url("../assets/linear.png"), url("../assets/the-night-cafe/thumbnail.jpg"); }
+  .galleria__slide-8 {
+    height: 330px;
+    background-image: url("../assets/linear.png"), url("../assets/arnolfini-portrait/thumbnail.jpg"); }
+  .galleria__slide-9 {
+    height: 285px;
+    background-image: url("../assets/linear.png"), url("../assets/guernica/thumbnail.jpg"); }
+  .galleria__slide-10 {
+    height: 500px;
+    background-image: url("../assets/linear.png"), url("../assets/van-gogh-self-portrait/thumbnail.jpg"); }
+  .galleria__slide-11 {
+    height: 525px;
+    background-image: url("../assets/linear.png"), url("../assets/mona-lisa/thumbnail.jpg"); }
+  .galleria__slide-12 {
+    height: 250px;
+    background-image: url("../assets/linear.png"), url("../assets/penitent-magdalene/thumbnail.jpg"); }
+  .galleria__slide-13 {
+    height: 250px;
+    background-image: url("../assets/linear.png"), url("../assets/the-sleeping-gypsy/thumbnail.jpg"); }
+  .galleria__slide-14 {
+    height: 430px;
+    background-image: url("../assets/linear.png"), url("../assets/the-Basket-of-apples/thumbnail.jpg"); }
+  .galleria__slide-15 {
+    height: 340px;
+    background-image: url("../assets/linear.png"), url("../assets/the-swing/thumbnail.jpg"); }
+
+.slider {
+  padding-top: 100px;
+  display: flex;
+  border-bottom: 1px solid #E5E5E5; }
+  .slider__item {
+    max-width: 1360px;
+    width: 100%;
+    min-height: 700px;
+    margin: 0 auto;
+    position: relative; }
+  .slider__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .slider__picture {
+    position: relative; }
+  .slider__preview-img {
+    max-width: 475px;
+    height: 560px;
+    object-fit: cover; }
+  .slider__fullsize-btn {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    cursor: pointer;
+    padding: 14px 16px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: all .3s; }
+    .slider__fullsize-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .slider__fullsize-icon {
+    height: 12px; }
+  .slider__btn-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.143px; }
+  .slider__pic-description {
+    color: #7D7D7D;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 475px;
+    text-align: left;
+    padding-right: 125px; }
+  .slider__pic-year {
+    color: #F3F3F3;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 150px;
+    position: absolute;
+    z-index: -1;
+    top: -10px; }
+  .slider__link {
+    display: block;
+    margin-top: 80px;
+    color: #7D7D7D;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.929px;
+    text-decoration-line: underline;
+    transition: all .3s; }
+    .slider__link:hover {
+      color: #000; }
+  .slider__pic-plate {
+    width: 445px;
+    min-height: 238px;
+    background-color: #fff;
+    padding: 0 0 67px 65px;
+    position: absolute;
+    top: 0;
+    left: 30%; }
+  .slider__pic-name {
+    color: #000;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 24px;
+    width: 360px; }
+  .slider__pic-artist {
+    color: #7D7D7D;
+    font-size: 15px;
+    font-weight: 400; }
+  .slider__artist-img {
+    position: absolute;
+    bottom: 75px;
+    left: 43%; }
+  .slider__progress-bar {
+    height: 1px;
+    background-color: #000;
+    max-width: 100%; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer__desc {
+    padding: 24px 0; }
+  .footer__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .footer__artist {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: .7; }
+  .footer__btn {
+    border: none;
+    outline: transparent;
+    background-color: #fff;
+    cursor: pointer; }
+    .footer__btn svg g {
+      transition: all .3s; }
+    .footer__btn.disabled svg g {
+      opacity: .15; }
+    .footer__btn:not(.disabled):hover svg g {
+      opacity: .5; }
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0; }
+  .modal__wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); }
+  .modal__page {
+    position: relative; }
+  .modal__close-btn {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    top: -40px; }
+    .modal__close-btn:hover {
+      opacity: .25; }
+
+@media (max-width: 1400px) {
+  .slider__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    padding-bottom: 50px; }
+  .slider__picture {
+    flex: 0 1 100%; }
+  .slider__pic-description {
+    padding-right: 0;
+    margin: 0 auto; }
+  .slider__pic-year {
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    transform: translateX(-75%); }
+  .slider__artist-img {
+    bottom: 0;
+    left: 510px;
+    top: 240px; } }
+@media (max-width: 1250px) {
+  .galleria {
+    column-count: 2; }
+    .galleria__slide-link {
+      justify-content: center; }
+
+  .slider__pic-plate {
+    left: 35%;
+    padding: 0 0 25px 65px;
+    min-height: 120px; } }
+@media (max-width: 950px) {
+  .slider__pic-plate {
+    left: 38%; } }
+@media (max-width: 740px) {
+  .galleria__item-name {
+    font-size: 20px; }
+
+  .slider {
+    padding-top: 40px; }
+    .slider__content {
+      gap: 170px; }
+    .slider__pic-plate {
+      left: 0;
+      top: 500px;
+      width: 280px;
+      padding: 24px; }
+    .slider__preview-img {
+      margin: 0 auto; }
+    .slider__fullsize-btn {
+      left: 17%;
+      top: 16px;
+      bottom: auto; }
+    .slider__pic-name {
+      font-size: 24px;
+      line-height: 29px;
+      width: auto; }
+    .slider__artist-img {
+      width: 62px;
+      height: 62px;
+      left: 15px;
+      top: 640px; }
+    .slider__pic-year {
+      left: 120px;
+      top: 630px;
+      transform: translateX(0);
+      font-size: 100px; }
+    .slider__pic-description {
+      padding: 0 24px; } }
+@media (max-width: 600px) {
+  .galleria {
+    column-count: 1; }
+
+  .slider__pic-plate {
+    left: -40px;
+    width: 320px;
+    padding-left: 64px; }
+
+  .slider__fullsize-btn {
+    left: 8%; }
+
+  .modal__wrapper {
+    padding: 0 24px; } }
+@media (max-width: 500px) {
+  .slider__pic-plate {
+    top: 240px; }
+
+  .slider__artist-img {
+    top: 370px; }
+
+  .slider__preview-img {
+    max-width: 327px;
+    height: 280px;
+    object-fit: cover; }
+
+  .slider__fullsize-btn {
+    left: 14%; }
+
+  .slider__pic-year {
+    top: 360px;
+    left: 100px;
+    font-size: 80px; }
+
+  .footer__title {
+    font-size: 14px; }
+
+  .footer__artist {
+    font-size: 10px; } }
+@media (max-width: 470px) {
+  .container {
+    padding: 40px 15px 0; }
+
+  .header__slider-link {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.929px; }
+
+  .header__logo-icon {
+    height: 32px; }
+
+  .slider__link {
+    margin-top: 40px; }
+
+  .galleria__slide-item {
+    margin-bottom: 23px; }
+
+  .footer__desc {
+    max-width: 200px; } }
+@media (max-width: 350px) {
+  .slider__preview-img {
+    max-width: 300px;
+    height: 260px; }
+
+  .slider__fullsize-btn {
+    left: 6%; } }
+
+/*# sourceMappingURL=style.css.map */
