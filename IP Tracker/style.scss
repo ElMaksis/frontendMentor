@@ -1,0 +1,149 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    color: #2C2C2C;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+}
+
+.header {
+    &__inner {
+        height: 280px;
+        text-align: center;
+        background-image: url(images/pattern-bg-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 33px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10);
+        margin: 0 15px 50px;
+    }
+
+    &__input {
+        padding: 0 24px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        height: 58px;
+        width: 500px;
+        border: none;
+        outline: transparent;
+        border-radius: 15px 0 0 15px;
+    }
+
+    &__btn {
+        height: 100%;
+        width: 58px;
+        background-color: #000;
+        border: none;
+        outline: transparent;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: #3F3F3F;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+:-moz-placeholder {
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+    opacity: 0.5;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.info {
+    max-width: 1110px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    padding: 32px 0;
+    position: relative;
+    z-index: 5;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        flex: 0 1 24%;
+        text-align: left;
+        padding: 0 37px;
+        height: 90px;
+
+        &+.info__item {
+            border-left: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        &-name {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.75px;
+            text-transform: uppercase;
+            opacity: 0.4987;
+        }
+
+        &-desc {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -0.232px;
+            margin: 13px 0 0 0;
+        }
+    }
+}
+
+.map {
+    height: 520px;
+    background-image: url(images/Maps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@import 'media';
