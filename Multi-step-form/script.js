@@ -180,32 +180,17 @@ function validationForm(page) {
         case 1:
             for (let i = 0; i < infoList.length; i++) {
                 if (infoList[i].value.trim() !== "") {
-                    // const x = regEx[i].test(infoList[i].value);
-                    // console.dir(regEx[i].test(infoList[i].value));
                     if (!regEx[i].test(infoList[i].value)) {
                         infoList[i].classList.add('form__input--error');
                         infoList[i].nextElementSibling.textContent = 'wrong data';
                         return false;
-                    } else {
-                        console.log(infoList[i].value);
                     }
-
                 } else {
                     infoList[i].classList.add('form__input--error');
                     return false;
                 }
             }
 
-
-
-            // for (let item of infoList) {
-            //     if (item.value.trim() !== "") {
-            //         userData[item.name] = item.value;
-            //     } else {
-            //         item.classList.add('form__input--error');
-            //         return false;
-            //     }
-            // }
             boolean = true;
             break;
 

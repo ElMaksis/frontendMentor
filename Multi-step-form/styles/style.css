@@ -21,12 +21,14 @@ body {
   border-radius: 15px;
   box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
   display: flex;
+  margin: 0 15px;
 }
 .form__decor {
   width: 274px;
   height: 568px;
   border-radius: 10px;
   background-image: url(../images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
   padding: 40px 0 0 32px;
   flex-shrink: 0;
 }
@@ -413,4 +415,78 @@ body {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 950px) {
+  .form__decor {
+    width: 230px;
+  }
+  .form__page {
+    padding: 40px 50px 32px;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    height: auto;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form__decor {
+    background-image: url(../images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 32px 0;
+  }
+  .form__page {
+    margin: -70px 15px 0;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+    padding: 32px 24px;
+  }
+  .form__plan-box {
+    flex-direction: column;
+  }
+  .form__nav {
+    margin-top: 40px;
+  }
+  .step__box {
+    display: none;
+  }
+  .plan-item {
+    width: 100%;
+    height: auto;
+    padding: 14px 0 14px 70px;
+  }
+  .addon-item {
+    padding: 13px 16px;
+  }
+  .gratitude__img {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .form__title {
+    font-size: 24px;
+  }
+  .addon-item {
+    width: 100%;
+    gap: 16px;
+  }
+  .addon-item__span {
+    flex-shrink: 0;
+  }
+  .check {
+    width: 100%;
+  }
+  .check__total {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
