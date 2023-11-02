@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="form__decor">
+            <div class=" step step step-one ">
+                <div class="step__num step__num--active">1</div>
+                <div class="step__box">
+                    <p class="step__sub-title">STEP 1</p>
+                    <h4 class="step__title">YOUR INFO</h4>
+                </div>
+            </div>
+            <div class="step step-twoo">
+                <div class="step__num">2</div>
+                <div class="step__box">
+                    <p class="step__sub-title">STEP 2</p>
+                    <h4 class="step__title">SELECT PLAN</h4>
+                </div>
+            </div>
+            <div class="step step-three">
+                <div class="step__num">3</div>
+                <div class="step__box">
+                    <p class="step__sub-title">STEP 3</p>
+                    <h4 class="step__title">ADD-ONS</h4>
+                </div>
+            </div>
+            <div class="step step-four">
+                <div class="step__num">4</div>
+                <div class="step__box">
+                    <p class="step__sub-title">STEP 4</p>
+                    <h4 class="step__title">SUMMARY</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__page form__page1">
+            <h2 class="form__title">Personal info</h2>
+            <h3 class="form__sub-title">Please provide your name, email address, and phone number.</h3>
+            <div class="form__input-box">
+                <label class="form__label">
+                    Name
+                    <input class="form__input" type="text" placeholder="e.g. Stephen King" name="name">
+                    <span class="form__error">This field is required</span>
+                </label>
+                <label class="form__label">
+                    Email Address
+                    <input class="form__input" type="text" placeholder="e.g. stephenking@lorem.com" name="email">
+                    <span class="form__error">This field is required</span>
+                </label>
+                <label class="form__label">
+                    Phone Number
+                    <input class="form__input" type="text" placeholder="e.g. +1 234 567 890" name="phone">
+                    <span class="form__error">This field is required</span>
+                </label>
+            </div>
+            <div class="form__nav form__nav--first">
+                <button class="form__btn">Next Step</button>
+            </div>
+        </div>
+
+
+
+        <div class="form__page form__page2 hide">
+            <h2 class="form__title">Select your plan</h2>
+            <h3 class="form__sub-title">You have the option of monthly or yearly billing.</h3>
+            <div class="form__plan-box">
+                <label class="plan-item plan-item--select">
+                    <input class="plan-item__radio hide" type="radio" name="plan" value="Arcade" checked>
+                    <h6 class="plan-item__title">Arcade</h6>
+                    <p class="plan-item__price">$9/mo</p>
+                    <p class="plan-item__gift">2 months free</p>
+                </label>
+                <label class="plan-item">
+                    <input class="plan-item__radio hide" type="radio" name="plan" value="Advanced">
+                    <h6 class="plan-item__title">Advanced</h6>
+                    <p class="plan-item__price">$12/mo</p>
+                    <p class="plan-item__gift">2 months free</p>
+                </label>
+                <label class="plan-item">
+                    <input class="plan-item__radio hide" type="radio" name="plan" value="Pro">
+                    <h6 class="plan-item__title">Pro</h6>
+                    <p class="plan-item__price">$15/mo</p>
+                    <p class="plan-item__gift">2 months free</p>
+                </label>
+            </div>
+            <div class="form__toggle">
+                <div class="form__period-switcher switcher">
+                    <label class="switcher__label">
+                        <input class="switcher__radio" type="radio" name="period" value="Monthly" checked>
+                        <span class="switcher__spot"></span>
+                        <span class="switcher__title switcher__title-month">Monthly</span>
+                    </label>
+                    <label class="switcher__label">
+                        <input class="switcher__radio" type="radio" name="period" value="Yearly">
+                        <span class="switcher__spot"></span>
+                        <span class="switcher__title switcher__title-year">Yearly</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__nav">
+                <a class="form__link" href="#">Go Back</a>
+                <button class="form__btn">Next Step</button>
+            </div>
+        </div>
+
+
+        <div class="form__page form__page3 hide">
+            <h2 class="form__title">Pick add-ons</h2>
+            <h3 class="form__sub-title">Add-ons help enhance your gaming experience.</h3>
+            <div class="form__addons-box">
+                <label class="addon-item addon-item--active">
+                    <input type="checkbox" class="addon-item__input" name="Online service" checked>
+                    <span class="addon-item__span"></span>
+                    <div class="addon-item__content">
+                        <h6 class="addon-item__title">Online service</h6>
+                        <p class="addon-item__sub-title">Access to multiplayer games</p>
+                    </div>
+                    <div class="addon-item__cost">+$1/mo</div>
+                </label>
+                <label class="addon-item addon-item--active">
+                    <input type="checkbox" class="addon-item__input" name="Larger storage" checked>
+                    <span class="addon-item__span"></span>
+                    <div class="addon-item__content">
+                        <h6 class="addon-item__title">Larger storage</h6>
+                        <p class="addon-item__sub-title">Extra 1TB of cloud save</p>
+                    </div>
+                    <div class="addon-item__cost">+$2/mo</div>
+                </label>
+                <label class="addon-item">
+                    <input type="checkbox" class="addon-item__input" name="Customizable profile">
+                    <span class="addon-item__span"></span>
+                    <div class="addon-item__content">
+                        <h6 class="addon-item__title">Customizable profile</h6>
+                        <p class="addon-item__sub-title">Custom theme on your profile</p>
+                    </div>
+                    <div class="addon-item__cost">+$2/mo</div>
+                </label>
+            </div>
+            <div class="form__nav">
+                <a class="form__link" href="#">Go Back</a>
+                <button class="form__btn">Next Step</button>
+            </div>
+        </div>
+
+
+        <div class="form__page form__page4 hide">
+            <h2 class="form__title">Finishing up</h2>
+            <h3 class="form__sub-title">Double-check everything looks OK before confirming.</h3>
+            <div class="form__check check">
+                <div class="check__item">
+                    <div>
+                        <p class="check__plan">Arcade (Monthly)</p>
+                        <a class="check__link check__point" href="#!">Change</a>
+                    </div>
+                    <span class="check__plan-sum">$9/mo</span>
+                </div>
+                <div class="check__addon-body">
+                    <!-- <div class="check__addon-item">
+                        <p class="check__addon-point">Online service</p>
+                        <span class="check__addon-sum">+$1/mo</span>
+                    </div>
+                    <div class="check__addon-item">
+                        <p class="check__addon-point">Larger storage</p>
+                        <span class="check__addon-sum">+$2/mo</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="check__total">
+                <p class="check__point check__total-point">Total (per month)</p>
+                <span class="check__total-sum">+$12/mo</span>
+            </div>
+            <div class="form__nav">
+                <a class="form__link" href="#">Go Back</a>
+                <button class="form__btn form__btn--confirm">Confirm</button>
+            </div>
+        </div>
+
+
+        <div class="gratitude hide">
+            <img class="gratitude__img" src="images/icon-thank-you.svg" alt="decor icon">
+            <h5 class="gratitude__title">Thank you!</h5>
+            <p class="gratitude__text">
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free to
+                email us at support@loremgaming.com.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
