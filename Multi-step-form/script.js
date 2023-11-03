@@ -182,8 +182,10 @@ function validationForm(page) {
                 if (infoList[i].value.trim() !== "") {
                     if (!regEx[i].test(infoList[i].value)) {
                         infoList[i].classList.add('form__input--error');
-                        infoList[i].nextElementSibling.textContent = 'wrong data';
+                        infoList[i].nextElementSibling.textContent = 'incorrect data';
                         return false;
+                    } else {
+                        userData[infoList[i].name] = infoList[i].value;
                     }
                 } else {
                     infoList[i].classList.add('form__input--error');

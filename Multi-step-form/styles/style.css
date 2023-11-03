@@ -69,7 +69,6 @@ body {
   position: absolute;
   top: 20px;
   right: 0;
-  transition: all 0.5s;
 }
 .form__input {
   width: 100%;
@@ -96,6 +95,7 @@ body {
 .form__input--error + .form__error {
   opacity: 1;
   transform: translateY(-20px);
+  transition: all 0.5s;
 }
 .form__plan-box {
   display: flex;
