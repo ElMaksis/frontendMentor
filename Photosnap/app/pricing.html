@@ -10,25 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.min.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="header__logo-link" href="#">
+                <a class="header__logo-link" href="index.html">
                     <img class="header__icon" src="images/shared/desktop/logo-dark.svg" alt="logo icon">
                 </a>
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__list-item">
-                            <a class="navigation__link" href="#">STORIES</a>
+                            <a class="navigation__link" href="stories.html">STORIES</a>
                         </li>
                         <li class="navigation__list-item">
-                            <a class="navigation__link" href="#">FEATURES</a>
+                            <a class="navigation__link" href="features.html">FEATURES</a>
                         </li>
                         <li class="navigation__list-item">
-                            <a class="navigation__link" href="#">PRICING</a>
+                            <a class="navigation__link" href="pricing.html">PRICING</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +52,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service__decor service__decor-1 service__decor-pricing"></div>
+                <div class="service__decor service__decor-pricing"></div>
             </div>
         </div>
     </section>
@@ -62,11 +63,11 @@
                 <div class="price__inner">
                     <div class="price__switcher">
                         <label class="price__label">
-                            <input class="price__input" type="radio" name="periodicity" checked>
+                            <input class="price__input" type="radio" name="periodicity" value="month" checked>
                             <span class="price__span price__span--monthly"></span>
                         </label>
                         <label class="price__label">
-                            <input class="price__input" type="radio" name="periodicity">
+                            <input class="price__input" type="radio" name="periodicity" value="year">
                             <span class="price__span price__span--yearly"></span>
                         </label>
                     </div>
@@ -197,40 +198,50 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__links-box">
-                    <a class="header__logo-link" href="#">
+                    <a class="header__logo-link" href="index.html">
                         <img class="header__icon" src="images/shared/desktop/logo-white.svg" alt="logo icon">
                     </a>
                     <div class="media-sprite">
-                        <a class="media__link" href="#">
-                            <img src="images/shared/desktop/facebook.svg" alt="f">
+                        <a class="media__link" href="https://www.facebook.com" target="_blank">
+                            <svg>
+                                <use xlink:href="images/shared/desktop/svg-sprite.svg#facebook"></use>
+                            </svg>
                         </a>
-                        <a class="media__link" href="#">
-                            <img src="images/shared/desktop/youtube.svg" alt="f">
+                        <a class="media__link" href="https://www.youtube.com" target="_blank">
+                            <svg>
+                                <use xlink:href="images/shared/desktop/svg-sprite.svg#youtube"></use>
+                            </svg>
                         </a>
-                        <a class="media__link" href="#">
-                            <img src="images/shared/desktop/twitter.svg" alt="f">
+                        <a class="media__link" href="https://twitter.com" target="_blank">
+                            <svg>
+                                <use xlink:href="images/shared/desktop/svg-sprite.svg#twitter"></use>
+                            </svg>
                         </a>
-                        <a class="media__link" href="#">
-                            <img src="images/shared/desktop/pinterest.svg" alt="f">
+                        <a class="media__link" href="https://ru.pinterest.com" target="_blank">
+                            <svg>
+                                <use xlink:href="images/shared/desktop/svg-sprite.svg#pinterest"></use>
+                            </svg>
                         </a>
-                        <a class="media__link" href="#">
-                            <img src="images/shared/desktop/instagram.svg" alt="f">
+                        <a class="media__link" href="https://www.instagram.com" target="_blank">
+                            <svg>
+                                <use xlink:href="images/shared/desktop/svg-sprite.svg#instagram"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__list-item">
-                            <a class="footer__link" href="#">Home</a>
+                            <a class="footer__link" href="index.html">Home</a>
                         </li>
                         <li class="footer__list-item">
-                            <a class="footer__link" href="#">STORIES</a>
+                            <a class="footer__link" href="stories.html">STORIES</a>
                         </li>
                         <li class="footer__list-item">
-                            <a class="footer__link" href="#">FEATURES</a>
+                            <a class="footer__link" href="features.html">FEATURES</a>
                         </li>
                         <li class="footer__list-item">
-                            <a class="footer__link" href="#">PRICING</a>
+                            <a class="footer__link" href="pricing.html">PRICING</a>
                         </li>
                     </ul>
                 </nav>
@@ -248,3 +259,6 @@
             </div>
         </div>
     </footer>
+</body>
+
+</html>
