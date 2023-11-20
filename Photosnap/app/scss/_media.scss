@@ -1,0 +1,28 @@
+@media(max-width: 1100px) {
+    .service__content-wrapper {
+        margin: 0 54px;
+    }
+
+    .service__decor {
+        flex-shrink: 1;
+        min-width: 275px;
+    }
+}
+
+@media (max-width: 800px) {
+    .service__inner {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .service__content {
+        padding: 70px 0;
+    }
+
+    .service__decor {
+        flex: 0 1 600px;
+        // height: 600px;
+        background-position: top center;
+        background-size: 100% auto;
+    }
+}
