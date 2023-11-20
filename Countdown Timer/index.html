@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <h2 class="countdown__title">We’re launching soon</h2>
+    <div class="countdown">
+        <div class="countdown-item">
+            <div class="countdown-item__panel days">
+                <div class=" countdown-item__rotate-elem animate__flipInX">
+                    <span class="countdown-item__counter countdown-item__counter--up js__days-counter">00</span>
+                </div>
+                <span class="countdown-item__counter countdown-item__counter--down js__days-counter">00</span>
+                <div class="countdown-item__middle-line"></div>
+            </div>
+            <h5 class="countdown-item__title">DAYS</h5>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-item__panel hours">
+                <div class="countdown-item__rotate-elem animate__flipInX">
+                    <span class="countdown-item__counter countdown-item__counter--up js__hours-counter">00</span>
+                </div>
+                <span class="countdown-item__counter countdown-item__counter--down js__hours-counter">00</span>
+                <div class="countdown-item__middle-line"></div>
+            </div>
+            <h5 class="countdown-item__title">HOURS</h5>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-item__panel minutes">
+                <div class=" countdown-item__rotate-elem animate__flipInX">
+                    <span class="countdown-item__counter countdown-item__counter--up js__minutes-counter">00</span>
+                </div>
+                <span class="countdown-item__counter countdown-item__counter--down js__minutes-counter">00</span>
+                <div class="countdown-item__middle-line"></div>
+            </div>
+            <h5 class="countdown-item__title">MINUTES</h5>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-item__panel seconds">
+                <div class=" countdown-item__rotate-elem animate__flipInX">
+                    <span class="countdown-item__counter countdown-item__counter--up js__seconds-counter">00</span>
+                </div>
+                <span class="countdown-item__counter countdown-item__counter--down js__seconds-counter">00</span>
+                <div class="countdown-item__middle-line"></div>
+            </div>
+            <h5 class="countdown-item__title">SECONDS</h5>
+        </div>
+    </div>
+    <div class="countdown__link-box">
+        <a href="#!" class="countdown__link link-facebook"></a>
+        <a href="#!" class="countdown__link link-pinterest"></a>
+        <a href="#!" class="countdown__link link-instagram"></a>
+    </div>
+</body>
+
+</html>
