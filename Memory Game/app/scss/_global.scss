@@ -1,0 +1,127 @@
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: $light-font;
+    border: none;
+    outline: transparent;
+    border-radius: 26px;
+    cursor: pointer;
+    font-size: 26px;
+    color: $light-font;
+    background-color: $light-bg;
+    transition: background-color .3s linear;
+
+    &:hover {
+        background-color: $hover-bg;
+    }
+
+    &-2 {
+        flex: 0 1 50%;
+    }
+
+    &-4 {
+        flex: 0 1 25%;
+    }
+
+    &--orange {
+        background-color: $orange;
+        color: $light-font;
+
+        &:hover {
+            background-color: #FFB84A;
+        }
+    }
+}
+
+.active {
+    background-color: $active;
+}
+
+.count-field {
+    width: 255px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 20px;
+    color: $dark-font;
+    background-color: #DFE7EC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__counter {
+        font-size: 32px;
+        color: $active;
+    }
+
+    &--current {
+        background-color: $orange;
+        color: $light-font;
+
+        &>.count-field__counter {
+            color: $light-font;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 10px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 20px solid $orange;
+        }
+
+        &::after {
+            content: 'CURRENT TURN';
+            width: 160px;
+            color: $dark-bg;
+            font-size: 13px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+        }
+    }
+}
+
+.logo-link {
+    display: block;
+    width: 150px;
+    height: 30px;
+
+    &--white {
+        &>svg>path {
+            fill: $light-font;
+        }
+    }
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
