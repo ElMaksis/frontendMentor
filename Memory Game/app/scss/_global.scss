@@ -24,14 +24,6 @@ body {
         background-color: $hover-bg;
     }
 
-    &-2 {
-        flex: 0 1 50%;
-    }
-
-    &-4 {
-        flex: 0 1 25%;
-    }
-
     &--orange {
         background-color: $orange;
         color: $light-font;
