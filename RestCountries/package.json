@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "name": "restcountries",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {},
+  "scripts": {
+    "watch": "npx tailwindcss -i ./style/input.css -o ./style/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
