@@ -1,6 +1,12 @@
 import refs from './refs.js';
 import data from '../data/data.json' assert { type: 'json' };
-// console.log(refs);
+
+
+// (function getData() {
+//     fetch('https://restcountries.com/v3.1/all')
+//         .then(response => response.json())
+//         .then(info => console.log(info));
+// })()
 
 
 refs.regionSelect.addEventListener('click', selectHandler);
@@ -21,7 +27,7 @@ function selectHandler(e) {
     refs.selectDropdaun.style.height = refs.selectDropdaun.scrollHeight + 'px';
     refs.selectMarker.style.transform = 'rotate(180deg)';
 
-    document.querySelectorAll('.js-select__item').forEach(item => {
+    refs.selectList.forEach(item => {
         item.addEventListener('click', (e) => {
             e.stopImmediatePropagation();
 
@@ -46,21 +52,10 @@ function filterRegion(region) {
     renderCountryList(filterList);
 }
 
-// function searchCountry() {
-//     const searchValue = data.filter(item => item.name.toLowerCase() === refs.countryInput.value.toLowerCase().trim());
-
-//     refs.countryInput.value = '';
-//     renderCountryList(searchValue);
-// }
-
 function searchCountry() {
     let inputData = refs.countryInput.value.trim().toLowerCase();
 
     const currentResults = data.filter(item => item.name.toLowerCase().includes(inputData));
-    // const currentResults = data.filter(item => {
-    //     const searchFlag = item.name.toLowerCase().indexOf(inputData);
-    //     if (searchFlag != -1) return true;
-    // });
 
     renderCountryList(currentResults);
 }
@@ -101,5 +96,17 @@ function renderCountryList(data) {
     });
 }
 
-renderCountryList(data);
+function initialPage() {
+    const params = new URLSearchParams(window.location.search);
+    const selectRegion = params.get('region');
+
+    if (selectRegion) {
+        filterRegion(selectRegion);
+        refs.regionSelect.querySelector('.js-select__value').textContent = selectRegion;
+    } else {
+        renderCountryList(data);
+    }
+}
+
+initialPage();
 

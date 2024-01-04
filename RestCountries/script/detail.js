@@ -13,9 +13,8 @@ function findCountry() {
     const currentCountry = data.find(item => item.alpha3Code === countryCode);
 
     renderPage(currentCountry);
+    setRegion(currentCountry.region);
 }
-
-
 
 function renderPage(country) {
     refs.detailFlag.src = country.flag;
@@ -35,12 +34,14 @@ function renderPage(country) {
 
             refs.detailNeighborBox.insertAdjacentHTML('beforeend',
                 `<a class="neighbor-item py-1 px-6 text-xs sm:text-sm dark:bg-[#2B3844] rounded-sm 
-            shadow-light hover:bg-[#ebebf3] dark:hover:bg-[#253542] transition-colors"
+            shadow-light hover:bg-[#ebebf3] dark:hover:bg-[#253542] hover:scale-105 transition-all"
             href="detail.html?country=${neighbor.alpha3Code}">${neighbor.name}</a>`)
         });
     }
 }
 
-
+function setRegion(region) {
+    refs.backBtn.href = `index.html?region=${region}`;
+}
 
 
